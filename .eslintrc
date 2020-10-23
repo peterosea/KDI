@@ -15,6 +15,9 @@
     "react-hooks"
   ],
   "rules": {
-    "react/react-in-jsx-scope": false,
+    "react/react-in-jsx-scope": false
+  },
+  "globals": {
+    "React": "writable"
   }
 }
