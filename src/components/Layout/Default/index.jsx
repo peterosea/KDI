@@ -1,12 +1,14 @@
 import React from 'react';
 // components
 import GNB from '@c/GNB';
+import FNB from '@c/FNB';
 
 const Default = (props) => {
   return (
     <>
       <GNB />
-      <div>{props.children}</div>
+      <main>{props.children}</main>
+      <FNB />
     </>
   );
 };
