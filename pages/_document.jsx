@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 class _Document extends Document {
@@ -28,13 +28,13 @@ class _Document extends Document {
 
   render() {
     return (
-      <html>
+      <Html>
         <Head></Head>
         <body>
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
