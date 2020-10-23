@@ -7,6 +7,9 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+  body {
+    margin: 0;
+  }
 `;
 
 function App({ Component, pageProps }) {
