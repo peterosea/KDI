@@ -18,3 +18,4 @@
 **Component**
 
 - GNB
+- FNB
