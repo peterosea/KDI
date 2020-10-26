@@ -9,13 +9,19 @@
 
 function themeslug_enqueue_95d7e4dc_3f72_40b6_ac87_b13f8bc8d2f1()
 {
-  wp_enqueue_style('slick1', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), null, false);
-  wp_enqueue_style('slick2', '///cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array(), null, false);
+?>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<?php
 }
-add_action('wp_enqueue_scripts', 'themeslug_enqueue_95d7e4dc_3f72_40b6_ac87_b13f8bc8d2f1');
+add_action('wp_head', 'themeslug_enqueue_95d7e4dc_3f72_40b6_ac87_b13f8bc8d2f1');
 
-function themeslug_enqueue_95d7e4dc_3f72_40b6_ac87_b13f8bc8d2f12()
+function themeslug_enqueue_95d7e4dc_3f72_40b6_ac87_b13f8bc8d2f2()
 {
-  echo '<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>';
+?>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<?php
 }
-add_action('wp_footer', 'themeslug_enqueue_95d7e4dc_3f72_40b6_ac87_b13f8bc8d2f12');
+add_action('wp_footer', 'themeslug_enqueue_95d7e4dc_3f72_40b6_ac87_b13f8bc8d2f2');

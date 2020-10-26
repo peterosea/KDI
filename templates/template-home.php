@@ -5,15 +5,18 @@
  * Template Post Type: post, page
  */
 
+// variables
+$theme_url = get_stylesheet_directory();
+$functions_url = get_stylesheet_directory() . '/functions';
+$img_url = get_home_url() . '/wp-content/uploads';
+// funtions
+include($functions_url . '/template_bootstrap.php');
+include($functions_url . '/template_slickslide.php');
 get_header();
 
-$theme_url = get_stylesheet_directory();
-$img_url = get_home_url() . '/wp-content/uploads';
-
+// main
 include($theme_url . '/template-parts/header/default.php');
 ?>
-
-
 
 <?php
 get_footer();
