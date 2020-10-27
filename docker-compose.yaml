@@ -1,18 +1,18 @@
-version: '3.7'
+version: "3.7"
 
 services:
   wordpress:
     image: wordpress:php7.4
     restart: always
     ports:
-      - 32775:80
+      - 40001:80
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wp
       WORDPRESS_DB_PASSWORD: wp
       WORDPRESS_DB_NAME: wp
     volumes:
-      - .:/var/www/html/wp-content/themes/base
+      - ./src:/var/www/html/wp-content/themes/base
       - ./.wordpress:/var/www/html
     networks:
       - backend
@@ -26,7 +26,7 @@ services:
       MYSQL_DATABASE: wp
       MYSQL_USER: wp
       MYSQL_PASSWORD: wp
-      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+      MYSQL_RANDOM_ROOT_PASSWORD: "1"
     volumes:
       - maria:/var/lib/mysql
     networks:
