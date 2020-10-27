@@ -15,9 +15,8 @@
 
 // Section 1
 .section1 {
-  @include respond-to("lg") {
-    margin-top: -10%;
-  }
+  width: 100%;
+  overflow: hidden;
   .slider {
     position: relative;
     * {
@@ -79,6 +78,10 @@
 
 // section2
 .section2 {
+  @include respond-to("lg") {
+    margin-top: -10%;
+  }
+
   .box {
     position: relative;
     .imgBg {
