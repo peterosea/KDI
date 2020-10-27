@@ -1,0 +1,25 @@
+img {
+  max-width: 100%;
+}
+
+.slider {
+  position: relative;
+  * {
+    outline: none;
+  }
+
+  .slickSlideText {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    .slick-dots li button::before {
+      color: #fff;
+      opacity: 1;
+    }
+    .slick-dots li.slick-active button::before {
+      color: orange;
+      opacity: 1;
+    }
+  }
+}
