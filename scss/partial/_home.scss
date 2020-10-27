@@ -44,7 +44,7 @@
         content: unset;
       }
       .slick-dots li button {
-        background-color: #fff;
+        background-color: $white;
         border-radius: 999px;
         width: 8px;
         height: 8px;
@@ -64,7 +64,7 @@
       margin-bottom: 26px;
     }
     .dimText {
-      color: #fff;
+      color: $white;
       opacity: 0.5;
       font-size: 21px;
       font-weight: 100;
@@ -124,10 +124,9 @@
   }
 
   .introduce {
-    $pointColor: #0054ff;
     // Row
     width: 100%;
-    background-color: $pointColor;
+    background-color: $electric-blue;
 
     ul {
       padding: 0;
@@ -141,10 +140,10 @@
         width: 29px;
         height: 29px;
         display: flex;
-        background-color: #fff;
+        background-color: $white;
         align-items: center;
         justify-content: center;
-        color: $pointColor;
+        color: $electric-blue;
         margin-right: 30px;
         border-radius: 999px;
         line-height: 1;
@@ -154,4 +153,11 @@
       }
     }
   }
+}
+
+// section3: 조직도
+section.section3 {
+  background-color: $black;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }

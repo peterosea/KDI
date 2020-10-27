@@ -163,6 +163,24 @@ include($theme_url . '/template-parts/header/temp.php');
       </div>
     </div>
   </section>
+  <section class="section3">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col">
+          <h1 class="title">조직도</h1>
+          <p>
+            <span class="d-md-block">㈜한화 방산부문은 차세대 유도무기와 탄약 지능화를 연구하는 종합연구소와</span>
+            <span class="d-md-block">각 사업장 별로 특성화 품목 생산과 연구개발을 진행하고 있습니다.</span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="<?php echo $img_url ?>/1565.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <?php
 get_footer();
