@@ -17,7 +17,7 @@ get_header();
 // main
 include($theme_url . '/template-parts/header/temp.php');
 ?>
-<main>
+<main class="homePage">
   <section class="section1">
     <div class="slider">
       <div class="slickSlideBg">
@@ -33,8 +33,14 @@ include($theme_url . '/template-parts/header/temp.php');
           <div class="container">
             <div class="row">
               <div class="col">
-                <h1>안정적인 고객 만족 실현으로<br />
+                <h1 class="title">안정적인 고객 만족 실현으로<br />
                   신뢰받는 방산 체계업체</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span class="dimText">고객에게 신뢰받는 방산업체로서 자주국방과<br />
+                  세계평화의 기틀이 되도록 하겠습니다.</span>
               </div>
             </div>
           </div>
@@ -43,8 +49,8 @@ include($theme_url . '/template-parts/header/temp.php');
           <div class="container">
             <div class="row">
               <div class="col">
-                <h1>안정적인 고객 만족 실현으로<br />
-                  신뢰받는 방산 체계업체</h1>
+                <span class="title">안정적인 고객 만족 실현으로<br />
+                  신뢰받는 방산 체계업체</span>
               </div>
             </div>
           </div>
@@ -63,6 +69,7 @@ include($theme_url . '/template-parts/header/temp.php');
           slidesToScroll: 1,
           arrows: false,
           dots: true,
+          dotsClass: 'slick-dots container',
           asNavFor: '.slickSlideBg'
         });
       </script>
