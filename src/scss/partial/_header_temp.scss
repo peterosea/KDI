@@ -2,15 +2,27 @@
   border-bottom: 1px solid $black-20;
   position: absolute;
   width: 100%;
-  height: 110px;
-  padding: 33px;
+  height: 60px;
+  padding: 16px;
   top: 0;
-  background-color: translate;
+  background-color: transparent;
   z-index: 9999;
+
+  @include respond-to("lg") {
+    padding: 33px;
+    height: 110px;
+  }
 
   .col.center {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    img {
+      height: 27px;
+      @include respond-to("lg") {
+        height: auto;
+      }
+    }
   }
 }

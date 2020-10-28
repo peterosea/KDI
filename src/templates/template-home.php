@@ -80,7 +80,7 @@ include($theme_url . '/template-parts/header/temp.php');
         </div>
       </div>
       <div class="row mb-4 pb-1">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mb-4 mb-lg-0">
           <div class="box box-2">
             <div class="imgBg">
               <img src="<?php echo $img_url ?>/1567.jpg" alt="">
@@ -107,12 +107,14 @@ include($theme_url . '/template-parts/header/temp.php');
       </div>
       <div class="row mb-4 pb-1">
         <div class="col-12">
-          <div class="container introduce py-0 px-0 py-md-5 px-md-5">
+          <div class="container introduce py-4 px-4 py-md-5 px-md-5">
             <div class="row">
-              <div class="col-5">
-                <img src="<?php echo $img_url ?>/1566.svg" alt="">
+              <div class="col-12 col-md-5">
+                <div class="imgBox">
+                  <img src="<?php echo $img_url ?>/1566.svg" alt="">
+                </div>
               </div>
-              <div class="col-7 py-4">
+              <div class="col-12 col-md-7 py-4">
                 <h1 class="title">
                   본사/사업장 소개
                 </h1>
@@ -162,8 +164,11 @@ include($theme_url . '/template-parts/header/temp.php');
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <img src="<?php echo $img_url ?>/1565.svg" alt="">
+        <div class="col d-none d-lg-block">
+          <img src="<?php echo $img_url ?>/1565.png" alt="">
+        </div>
+        <div class="col d-lg-none">
+          <img src="<?php echo $img_url ?>/1568.png" alt="">
         </div>
       </div>
     </div>

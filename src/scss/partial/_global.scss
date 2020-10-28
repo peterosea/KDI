@@ -4,6 +4,9 @@ html body {
   color: $white;
 }
 
+.site-content {
+  position: relative;
+}
 .site-branding-container,
 .skip-link.screen-reader-text,
 .site-info {
