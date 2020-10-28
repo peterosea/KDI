@@ -1,0 +1,14 @@
+html body {
+  margin: 0;
+  background-color: $black-two;
+  color: $white;
+}
+
+.site-content {
+  position: relative;
+}
+.site-branding-container,
+.skip-link.screen-reader-text,
+.site-info {
+  display: none;
+}
