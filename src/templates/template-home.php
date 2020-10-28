@@ -25,9 +25,6 @@ include($theme_url . '/template-parts/header/temp.php');
         <div>
           <img src="<?php echo $img_url ?>/10.jpg" alt="">
         </div>
-        <div>
-          <img src="<?php echo $img_url ?>/10.jpg" alt="">
-        </div>
       </div>
       <div class="slickSlideText">
         <div class="slide">
@@ -46,16 +43,6 @@ include($theme_url . '/template-parts/header/temp.php');
             </div>
           </div>
         </div>
-        <div class="slide">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <span class="title">안정적인 고객 만족 실현으로<br />
-                  신뢰받는 방산 체계업체</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <script>
         $('.slickSlideBg').slick({
@@ -69,7 +56,7 @@ include($theme_url . '/template-parts/header/temp.php');
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          dots: true,
+          dots: false,
           dotsClass: 'slick-dots container',
           asNavFor: '.slickSlideBg'
         });
