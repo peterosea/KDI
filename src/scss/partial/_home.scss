@@ -115,13 +115,15 @@
       font-style: normal;
       line-height: 1.5;
       letter-spacing: -1px;
+      @include respond-to("lg") {
+        padding: 38px;
+      }
       .title {
         font-size: 28px;
         font-weight: 900;
         line-height: 1.2;
         letter-spacing: -2px;
         @include respond-to("lg") {
-          padding: 30px;
           font-size: 40px;
         }
       }

@@ -248,6 +248,12 @@ html body {
   letter-spacing: -1px;
 }
 
+@media (min-width: 992px) {
+  .section2 .box .content {
+    padding: 38px;
+  }
+}
+
 .section2 .box .content .title {
   font-size: 28px;
   font-weight: 900;
@@ -257,7 +263,6 @@ html body {
 
 @media (min-width: 992px) {
   .section2 .box .content .title {
-    padding: 30px;
     font-size: 40px;
   }
 }
