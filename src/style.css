@@ -145,30 +145,14 @@ html body {
   outline: none;
 }
 
-.section1 .slider .slickSlideBg {
-  margin-bottom: 100px;
-}
-
-@media (min-width: 992px) {
-  .section1 .slider .slickSlideBg {
-    margin-bottom: 0;
-  }
-}
-
 .section1 .slider .slickSlideText {
   position: absolute;
-  top: 70%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 100%;
   padding-top: 80px;
   padding-bottom: 20px;
-}
-
-@media (min-width: 992px) {
-  .section1 .slider .slickSlideText {
-    top: 50%;
-  }
 }
 
 .section1 .slider .slickSlideText .slick-dots {

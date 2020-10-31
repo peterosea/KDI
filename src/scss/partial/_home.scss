@@ -30,23 +30,13 @@
       outline: none;
     }
 
-    .slickSlideBg {
-      margin-bottom: 100px;
-      @include respond-to("lg") {
-        margin-bottom: 0;
-      }
-    }
     .slickSlideText {
       position: absolute;
-      top: 70%;
+      top: 50%;
       transform: translateY(-50%);
       width: 100%;
       padding-top: 80px;
       padding-bottom: 20px;
-
-      @include respond-to("lg") {
-        top: 50%;
-      }
 
       .slick-dots {
         left: 50%;
