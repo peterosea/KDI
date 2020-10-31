@@ -9,8 +9,7 @@
 
 function font_8fd30c6f_6025_4027_9a2f_dff96a4d0826()
 {
-  wp_enqueue_style('fonts google: fira code', 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
-  wp_enqueue_style('fonts google: fira code', 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+  wp_enqueue_style('fonts google: fira code', '/wp-content/themes/base/assets/fonts/Fira_Sans/css2.css');
 }
 add_action('wp_enqueue_scripts', 'font_8fd30c6f_6025_4027_9a2f_dff96a4d0826');
 
