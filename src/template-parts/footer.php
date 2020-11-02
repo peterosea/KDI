@@ -2,11 +2,11 @@
 $theme_url = get_stylesheet_directory();
 $img_url = get_home_url() . '/wp-content/uploads';
 ?>
-<footer class="default">
+<footer class="default pb-5 pt-5">
   <div class="container">
     <div class="row">
       <div class="col">
-        <ul class="snsList">
+        <ul class="snsList d-none">
           <li>
             <a href="#" class="box">
               <img src="<?php echo $img_url ?>/1109.svg" alt="">
@@ -24,9 +24,9 @@ $img_url = get_home_url() . '/wp-content/uploads';
           </li>
         </ul>
         <div class='cc'>
-          <p>
-            Hanwha Copyright©2013 HANWHA GROUP ALL RIGHTS RESERVED.
-          </p>
+          <span>
+            Copyright©2020 Korea Defense Industry corp.
+          </span>
         </div>
       </div>
     </div>
