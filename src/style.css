@@ -145,30 +145,14 @@ html body {
   outline: none;
 }
 
-.section1 .slider .slickSlideBg {
-  margin-bottom: 100px;
-}
-
-@media (min-width: 992px) {
-  .section1 .slider .slickSlideBg {
-    margin-bottom: 0;
-  }
-}
-
 .section1 .slider .slickSlideText {
   position: absolute;
-  top: 70%;
+  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 100%;
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 20px;
-}
-
-@media (min-width: 992px) {
-  .section1 .slider .slickSlideText {
-    top: 50%;
-  }
 }
 
 .section1 .slider .slickSlideText .slick-dots {
@@ -239,13 +223,19 @@ html body {
 
 .section2 .box .content {
   position: absolute;
-  padding: 30px;
+  padding: 16px;
   font-size: 20px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: -1px;
+}
+
+@media (min-width: 992px) {
+  .section2 .box .content {
+    padding: 38px;
+  }
 }
 
 .section2 .box .content .title {
@@ -265,10 +255,56 @@ html body {
   margin-bottom: 0;
 }
 
+.section2 .box-1 .imgBg {
+  padding-top: 80%;
+  background: url("/wp-content/uploads/1564.jpg");
+  background-size: cover;
+  background-position-x: 20%;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .section2 .box-1 .imgBg {
+    padding-top: 0;
+    background: none;
+  }
+}
+
+.section2 .box-1 .imgBg img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .section2 .box-1 .imgBg img {
+    display: block;
+  }
+}
+
 .section2 .box-1 .content {
   text-align: right;
   right: 0;
   top: 0;
+}
+
+.section2 .box-2 {
+  overflow: hidden;
+}
+
+.section2 .box-2 img {
+  width: 100%;
+  margin-top: -200px;
+}
+
+@media (min-width: 768px) {
+  .section2 .box-2 {
+    height: 100%;
+  }
+  .section2 .box-2 .imgBg {
+    background: url("/wp-content/uploads/1567-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
 }
 
 .section2 .box-2 .content {
@@ -277,10 +313,9 @@ html body {
 }
 
 .section2 .box-3 .content {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
+  text-align: right;
+  top: 0;
+  right: 0;
 }
 
 .section2 .introduce {
@@ -322,6 +357,9 @@ html body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section2 .introduce ul li .number {
@@ -339,13 +377,44 @@ html body {
       -ms-flex-pack: center;
           justify-content: center;
   color: #0054ff;
-  margin-right: 30px;
+  margin-right: 16px;
   border-radius: 999px;
   line-height: 1;
 }
 
+@media (min-width: 768px) {
+  .section2 .introduce ul li .number {
+    margin-right: 30px;
+  }
+}
+
 .section2 .introduce ul li b {
-  margin-right: 22px;
+  margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .section2 .introduce ul li b {
+    margin-right: 22px;
+  }
+}
+
+.section2 .introduce ul li .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .section2 .introduce ul li .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: flex;
+            flex-direction: flex;
+  }
 }
 
 section.section3 {

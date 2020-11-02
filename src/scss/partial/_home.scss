@@ -30,23 +30,13 @@
       outline: none;
     }
 
-    .slickSlideBg {
-      margin-bottom: 100px;
-      @include respond-to("lg") {
-        margin-bottom: 0;
-      }
-    }
     .slickSlideText {
       position: absolute;
-      top: 70%;
+      top: 50%;
       transform: translateY(-50%);
       width: 100%;
-      padding-top: 40px;
+      padding-top: 80px;
       padding-bottom: 20px;
-
-      @include respond-to("lg") {
-        top: 50%;
-      }
 
       .slick-dots {
         left: 50%;
@@ -108,13 +98,16 @@
     }
     .content {
       position: absolute;
-      padding: 30px;
+      padding: 16px;
       font-size: 20px;
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.5;
       letter-spacing: -1px;
+      @include respond-to("lg") {
+        padding: 38px;
+      }
       .title {
         font-size: 28px;
         font-weight: 900;
@@ -129,6 +122,24 @@
       }
     }
     &-1 {
+      .imgBg {
+        padding-top: 80%;
+        background: url("/wp-content/uploads/1564.jpg");
+        background-size: cover;
+        background-position-x: 20%;
+        background-repeat: no-repeat;
+
+        @include respond-to("md") {
+          padding-top: 0;
+          background: none;
+        }
+        img {
+          display: none;
+          @include respond-to("md") {
+            display: block;
+          }
+        }
+      }
       .content {
         text-align: right;
         right: 0;
@@ -138,6 +149,20 @@
       //   linear-gradient(to right, rgba(12, 141, 255, 0) 41%, #2468a4 81%);
     }
     &-2 {
+      overflow: hidden;
+      img {
+        width: 100%;
+        margin-top: -200px;
+      }
+      @include respond-to("md") {
+        height: 100%;
+        .imgBg {
+          background: url("/wp-content/uploads/1567-1.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100%;
+        }
+      }
       .content {
         top: 0;
         left: 0;
@@ -145,9 +170,9 @@
     }
     &-3 {
       .content {
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
+        text-align: right;
+        top: 0;
+        right: 0;
       }
     }
   }
@@ -177,6 +202,7 @@
       list-style: none;
       display: flex;
       margin-bottom: 20px;
+      align-items: center;
       .number {
         font-family: "Fira Code", monospace;
         width: 29px;
@@ -186,12 +212,25 @@
         align-items: center;
         justify-content: center;
         color: $electric-blue;
-        margin-right: 30px;
+        margin-right: 16px;
         border-radius: 999px;
         line-height: 1;
+        @include respond-to("md") {
+          margin-right: 30px;
+        }
       }
       b {
-        margin-right: 22px;
+        margin-right: 8px;
+        @include respond-to("md") {
+          margin-right: 22px;
+        }
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        @include respond-to("sm") {
+          flex-direction: flex;
+        }
       }
     }
   }
