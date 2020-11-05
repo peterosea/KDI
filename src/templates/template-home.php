@@ -122,8 +122,8 @@ include($theme_url . '/template-parts/header/temp.php');
                     본사/사업장 소개
                   </h1>
                   <p>
-                    ㈜한화 방산부문은 차세대 유도무기와 탄약 지능화를 연구하는 종합연구소와
-                    각 사업장 별로 특성화 품목 생산과 연구개발을 진행하고 있습니다.
+                    <span class="d-lg-block">KDI는 차세대 유도무기와 탄약 지능화를 연구하는 종합연구소와</span>
+                    <span class="d-lg-block"> 각 사업장 별로 특성화 품목 생산과 연구개발을 진행하고 있습니다.</span>
                   </p>
                   <div class="imgBox d-flex d-sm-none">
                     <img src="<?php echo $img_url ?>/1566.svg" alt="">
@@ -173,7 +173,7 @@ include($theme_url . '/template-parts/header/temp.php');
         <div class="col">
           <h1 class="title">조직도</h1>
           <p>
-            <span class="d-md-block">㈜한화 방산부문은 차세대 유도무기와 탄약 지능화를 연구하는 종합연구소와</span>
+            <span class="d-md-block">KDI는 차세대 유도무기와 탄약 지능화를 연구하는 종합연구소와</span>
             <span class="d-md-block">각 사업장 별로 특성화 품목 생산과 연구개발을 진행하고 있습니다.</span>
           </p>
         </div>
