@@ -3,19 +3,24 @@
     <div class="row mb-4 pb-1">
       <div class="col-12">
         <div class="box box-1">
-          <div class="imgBg">
+          <div class="imgBg" style="background-image:url(<?php echo $img_url ?>/1564.jpg)">
             <img src="<?php echo $img_url ?>/1564.jpg" alt="">
           </div>
           <div class="content">
-            <h1 class="title">차기다련장체계(천무)</h1>
-            <p>보병 전력증강을 위한<br />
-              장사거리/고정밀 유도로켓</p>
+            <div>
+              <h1 class="title">차기다련장체계(천무)</h1>
+              <p>보병 전력증강을 위한<br />
+                장사거리/고정밀 유도로켓</p>
+            </div>
+            <div class="moreBtnWrap">
+              <a href="#" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row mb-4 pb-1">
-      <div class="col-12 col-md-5 mb-4 mb-md-0">
+      <div class="col-12 col-lg-4 mb-4 mb-lg-0">
         <div class="box box-2 newsBox slickBox">
           <div class="dotContainer">
             <span>news</span>
@@ -55,33 +60,41 @@
           </script>
         </div>
       </div>
-      <div class="col-12 col-md-7">
-        <div class="box box-3">
+      <div class="col-12 col-lg-8">
+        <div class="box box-3 imgBg" style="background-image: url(<?php echo $img_url ?>/pc-004021816-1.jpg)">
           <div class="imgBg">
-            <img src="<?php echo $img_url ?>/pc-004021816-1.jpg" alt="">
           </div>
           <div class="content">
-            <h1 class="title">230mm급 무유도탄</h1>
-            <p>천무 발사대에서 운용가능한 <br />
-              지역제압용 무유도로켓</p>
+            <div>
+              <h1 class="title">230mm급 무유도탄</h1>
+              <p>천무 발사대에서 운용가능한 <br />
+                지역제압용 무유도로켓</p>
+            </div>
+            <div class="moreBtnWrap">
+              <a href="#" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row mb-4 pb-1">
-      <div class="col-12 col-md-7">
-        <div class="box box-3">
+      <div class="col-12 col-lg-8 mb-4 mb-lg-0">
+        <div class="box box-3 imgBg" style="background-image: url(<?php echo $img_url ?>/2820.jpg)">
           <div class="imgBg">
-            <img src="<?php echo $img_url ?>/1569.jpg" alt="">
           </div>
           <div class="content">
-            <h1 class="title">230mm급 무유도탄</h1>
-            <p>천무 발사대에서 운용가능한 <br />
-              지역제압용 무유도로켓</p>
+            <div>
+              <h1 class="title">230mm급 무유도탄</h1>
+              <p>천무 발사대에서 운용가능한 <br />
+                지역제압용 무유도로켓</p>
+            </div>
+            <div class="moreBtnWrap">
+              <a href="#" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-5 mb-4 mb-md-0">
+      <div class="col-12 col-lg-4 mb-4 mb-lg-0">
         <div class="box box-2 noticeBox slickBox">
           <div class="dotContainer">
             <span>news</span>

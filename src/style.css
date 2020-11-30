@@ -132,6 +132,12 @@ html body {
   }
 }
 
+@media (min-width: 1439px) {
+  .homePage section > .container {
+    max-width: 1200px;
+  }
+}
+
 .section1 {
   width: 100%;
   overflow: hidden;
@@ -219,10 +225,46 @@ html body {
 
 .section2 .box {
   position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.section2 .box.imgBg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.section2 .box .imgBg {
+  padding-top: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 992px) {
+  .section2 .box .imgBg {
+    padding-top: 0;
+    background: none;
+  }
+}
+
+.section2 .box .imgBg img {
+  display: none;
 }
 
 .section2 .box .content {
   position: absolute;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 16px;
   font-size: 20px;
   font-weight: 300;
@@ -243,6 +285,7 @@ html body {
   font-weight: 900;
   line-height: 1.2;
   letter-spacing: -2px;
+  word-break: keep-all;
 }
 
 @media (min-width: 992px) {
@@ -255,26 +298,42 @@ html body {
   margin-bottom: 0;
 }
 
+.section2 .box .content .moreBtnWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section2 .box .content .moreBtn {
+  padding: 10px 20px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.section2 .box .content .moreBtn span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.6px;
+  color: #ffffff;
+  margin-right: 4px;
+}
+
 .section2 .box-1 .imgBg {
-  padding-top: 80%;
-  background: url("/wp-content/uploads/1564.jpg");
-  background-size: cover;
   background-position-x: 20%;
-  background-repeat: no-repeat;
 }
 
-@media (min-width: 768px) {
-  .section2 .box-1 .imgBg {
-    padding-top: 0;
-    background: none;
-  }
-}
-
-.section2 .box-1 .imgBg img {
-  display: none;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .section2 .box-1 .imgBg img {
     display: block;
   }
@@ -286,6 +345,12 @@ html body {
   top: 0;
 }
 
+.section2 .box-1 .content .moreBtnWrap {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .section2 .box-2 {
   overflow: hidden;
 }
@@ -295,7 +360,7 @@ html body {
   margin-top: -200px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .section2 .box-2 {
     height: 100%;
   }
@@ -313,9 +378,8 @@ html body {
 }
 
 .section2 .box-3 .content {
-  text-align: right;
   top: 0;
-  right: 0;
+  left: 0;
 }
 
 .section2 div.slickBox.slickBox.box {
