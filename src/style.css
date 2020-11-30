@@ -318,6 +318,97 @@ html body {
   right: 0;
 }
 
+.section2 div.slickBox.slickBox.box {
+  background-color: #ffffff;
+  color: #222222;
+  padding: 40px;
+}
+
+.section2 div.slickBox.slickBox.box .dotContainer {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2 div.slickBox.slickBox.box #dot .slick-dots {
+  position: relative;
+  bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section2 div.slickBox.slickBox.box #dot .slick-dots * {
+  all: unset;
+}
+
+.section2 div.slickBox.slickBox.box #dot .slick-dots li {
+  margin-right: 5px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.section2 div.slickBox.slickBox.box #dot .slick-dots li::last-child {
+  margin-right: 0;
+}
+
+.section2 div.slickBox.slickBox.box #dot .slick-dots li.slick-active button {
+  background-color: #0054ff;
+}
+
+.section2 div.slickBox.slickBox.box #dot .slick-dots button {
+  width: 10px;
+  height: 10px;
+  background-color: #dddddd;
+  border-radius: 999px;
+}
+
+.section2 div.slickBox.slickBox.box #dot .slick-dots button::before {
+  content: none;
+}
+
+.section2 div.slickBox.slickBox.box .slide {
+  outline: none;
+}
+
+.section2 div.slickBox.slickBox.box .content {
+  padding: 0;
+  position: relative;
+}
+
+.section2 div.slickBox.slickBox.box p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: -0.8px;
+  text-align: left;
+  color: #999999;
+}
+
+.section2 div.slickBox.slickBox.box .title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: -1.5px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
 .section2 .introduce {
   width: 100%;
   background-color: #0054ff;
