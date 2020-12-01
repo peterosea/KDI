@@ -1,4 +1,14 @@
 // Home Page 공통
+body.home {
+  background-color: $black-two;
+  color: $white;
+
+  .container {
+    @media (min-width: 1439px) {
+      max-width: 1200px;
+    }
+  }
+}
 .homePage {
   font-family: $NotoSansKR;
   font-weight: 300;
@@ -16,11 +26,6 @@
     font-size: 32px;
     @include respond-to("lg") {
       font-size: 40px;
-    }
-  }
-  section > .container {
-    @media (min-width: 1439px) {
-      max-width: 1200px;
     }
   }
 }

@@ -12,8 +12,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 html body {
   margin: 0;
-  background-color: #000000;
-  color: #ffffff;
 }
 
 .site-content {
@@ -290,6 +288,17 @@ html body {
   }
 }
 
+body.home {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media (min-width: 1439px) {
+  body.home .container {
+    max-width: 1200px;
+  }
+}
+
 .homePage {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 300;
@@ -313,12 +322,6 @@ html body {
 @media (min-width: 992px) {
   .homePage section h1.title {
     font-size: 40px;
-  }
-}
-
-@media (min-width: 1439px) {
-  .homePage section > .container {
-    max-width: 1200px;
   }
 }
 
@@ -799,6 +802,28 @@ section.section3 {
   padding-bottom: 80px;
 }
 
+body.home footer.default {
+  color: #ffffff;
+}
+
+body.home footer.default .box {
+  background-color: #ffffff;
+}
+
+body.home footer.default .snsList svg {
+  fill: #04070c;
+}
+
+body.home footer.default .snsList .insta {
+  fill: white;
+}
+
+@media (min-width: 768px) {
+  body.home footer.default .snsList .insta {
+    opacity: 0.5;
+  }
+}
+
 footer.default {
   padding-top: 60px;
 }
@@ -869,7 +894,7 @@ footer.default .pageList a {
   line-height: 2.86;
   letter-spacing: normal;
   text-align: right;
-  color: #ffffff;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -885,7 +910,7 @@ footer.default .snsList li {
 footer.default .snsList .box {
   width: 30px;
   height: 30px;
-  background-color: #ffffff;
+  background-color: #000000;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   border-radius: 8px;
@@ -907,11 +932,11 @@ footer.default .snsList .box {
 }
 
 footer.default .snsList svg {
-  fill: #04070c;
+  fill: #ffffff;
 }
 
 footer.default .snsList .insta {
-  fill: white;
+  fill: #000000;
 }
 
 @media (min-width: 768px) {
@@ -929,6 +954,6 @@ footer.default .cc {
   font-style: normal;
   line-height: 2.86;
   letter-spacing: normal;
-  color: #ffffff;
+  color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
