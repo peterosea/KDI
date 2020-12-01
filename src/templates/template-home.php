@@ -16,7 +16,7 @@ include($functions_url . '/template_home.php');
 get_header();
 
 // main
-include($theme_url . '/template-parts/header/temp.php');
+include($theme_url . '/template-parts/header/default.php');
 ?>
 <main class="homePage">
   <?php include('template-home/section1.php') ?>
