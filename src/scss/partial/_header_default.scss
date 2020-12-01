@@ -1,16 +1,17 @@
 .header-default {
-  top: 0;
-  z-index: 9999;
-  position: absolute;
+  position: relative;
+  z-index: 2;
   width: 100%;
   opacity: 0.95;
   background-color: $dark;
-  padding: 30px 50px;
   .logo {
     position: absolute;
     left: 40px;
     top: 50%;
     transform: translateY(-50%);
+  }
+  .menu-gnb-container > .menu > .menu-item {
+    padding: 30px 0;
   }
   .translate {
     position: absolute;
@@ -46,6 +47,15 @@
       &:last-child {
         margin-right: 0;
       }
+      &:hover {
+        a {
+          opacity: 1;
+        }
+        .sub-menu {
+          z-index: 2;
+          top: 100%;
+        }
+      }
       a {
         font-family: $NotoSansKR;
         font-size: 20px;
@@ -55,7 +65,34 @@
         line-height: 1.2;
         letter-spacing: -1px;
         text-align: left;
+        opacity: 0.5;
         color: $white;
+        text-decoration: none;
+      }
+      .sub-menu {
+        width: 100vw;
+        position: absolute;
+        top: -100%;
+        padding: 23px 0;
+        left: 0;
+        display: flex;
+        z-index: -9999;
+        justify-content: center;
+        background-color: $white;
+        a {
+          font-family: $NotoSansKR;
+          font-size: 16px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: -0.8px;
+          text-align: left;
+          color: $black-three;
+          &:hover {
+            color: $electric-blue;
+          }
+        }
       }
     }
   }

@@ -47,7 +47,9 @@
         $primaryNav = wp_get_nav_menu_items(2);
         foreach ($primaryNav as $navItem) {
           $current = ($navItem->object_id == get_queried_object_id()) ? 'current' : '';
-          echo '<li class="dropdownItem ' . $current . '"><a href="' . $navItem->url . '" title="' . $navItem->title . '">' . $navItem->title . '</a></li>';
+          if (empty($navItem->menu_item_parent)) {
+            echo '<li class="dropdownItem ' . $current . '"><a href="' . $navItem->url . '" title="' . $navItem->title . '">' . $navItem->title . '</a></li>';
+          }
         }
         ?>
       </ul>

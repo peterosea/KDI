@@ -25,13 +25,11 @@ html body {
 }
 
 .header-default {
-  top: 0;
-  z-index: 9999;
-  position: absolute;
+  position: relative;
+  z-index: 2;
   width: 100%;
   opacity: 0.95;
   background-color: #1b1d21;
-  padding: 30px 50px;
 }
 
 .header-default .logo {
@@ -40,6 +38,10 @@ html body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.header-default .menu-gnb-container > .menu > .menu-item {
+  padding: 30px 0;
 }
 
 .header-default .translate {
@@ -89,6 +91,15 @@ html body {
   margin-right: 0;
 }
 
+.header-default .menu li:hover a {
+  opacity: 1;
+}
+
+.header-default .menu li:hover .sub-menu {
+  z-index: 2;
+  top: 100%;
+}
+
 .header-default .menu li a {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 20px;
@@ -98,7 +109,41 @@ html body {
   line-height: 1.2;
   letter-spacing: -1px;
   text-align: left;
+  opacity: 0.5;
   color: #ffffff;
+  text-decoration: none;
+}
+
+.header-default .menu li .sub-menu {
+  width: 100vw;
+  position: absolute;
+  top: -100%;
+  padding: 23px 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -9999;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+}
+
+.header-default .menu li .sub-menu a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  text-align: left;
+  color: #222222;
+}
+
+.header-default .menu li .sub-menu a:hover {
+  color: #0054ff;
 }
 
 .header-default-mobile {
@@ -361,7 +406,7 @@ body.home {
           transform: translateY(-50%);
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 120px;
 }
 
 .section1 .slider .slickSlideText .slick-dots {
