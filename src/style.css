@@ -619,27 +619,89 @@ footer.default {
   padding-top: 60px;
 }
 
-footer.default .snsList {
-  padding: 0;
+footer.default .container-fluid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+footer.default .justifyCenter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer.default .alignRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer.default .listWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer.default .listWrap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+footer.default .pageList {
+  margin: 0;
+  margin-right: 50px;
+}
+
+footer.default .pageList li {
+  margin-right: 8px;
+}
+
+footer.default .pageList li:last-child {
+  margin-right: 0;
+}
+
+footer.default .pageList a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.86;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer.default .snsList {
+  margin: 0;
 }
 
 footer.default .snsList li {
-  list-style: none;
   padding: 0 8px;
+  margin: 0;
 }
 
 footer.default .snsList .box {
   width: 30px;
   height: 30px;
   background-color: #ffffff;
-  opacity: 0.5;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   border-radius: 8px;
@@ -654,9 +716,35 @@ footer.default .snsList .box {
           justify-content: center;
 }
 
+@media (min-width: 768px) {
+  footer.default .snsList .box {
+    opacity: 0.5;
+  }
+}
+
+footer.default .snsList svg {
+  fill: #04070c;
+}
+
+footer.default .snsList .insta {
+  fill: white;
+}
+
+@media (min-width: 768px) {
+  footer.default .snsList .insta {
+    opacity: 0.5;
+  }
+}
+
 footer.default .cc {
   opacity: 0.5;
-  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.86;
+  letter-spacing: normal;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

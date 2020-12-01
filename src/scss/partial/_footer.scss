@@ -1,29 +1,89 @@
 footer.default {
   padding-top: 60px;
-  .snsList {
-    padding: 0;
+
+  .container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .justifyCenter {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    li {
+    align-items: center;
+  }
+  .alignRight {
+    display: flex;
+    flex-direction: column;
+  }
+  .listWrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    align-items: center;
+    ul {
+      display: flex;
       list-style: none;
+      padding: 0;
+    }
+  }
+  .pageList {
+    margin: 0;
+    margin-right: 50px;
+    li {
+      margin-right: 8px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      font-family: $NotoSansKR;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.86;
+      letter-spacing: normal;
+      text-align: right;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  .snsList {
+    margin: 0;
+    li {
       padding: 0 8px;
+      margin: 0;
     }
     .box {
       width: 30px;
       height: 30px;
       background-color: $white;
-      opacity: 0.5;
       transition: opacity 0.3s;
       border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
+      @include respond-to("md") {
+        opacity: 0.5;
+      }
+    }
+    svg {
+      fill: #04070c;
+    }
+    .insta {
+      fill: rgb(255, 255, 255);
+      @include respond-to("md") {
+        opacity: 0.5;
+      }
     }
   }
   .cc {
     opacity: 0.5;
-    text-align: center;
+    font-family: $NotoSansKR;
     font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.86;
+    letter-spacing: normal;
+    color: $white;
   }
 }
