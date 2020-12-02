@@ -1,7 +1,11 @@
 <?php
 $img_url = get_home_url() . '/wp-content/uploads';
+$classes = 'entry-header';
+if (!empty($discussion) && absint($discussion->responses) > 0) {
+  $classes = 'entry-header has-discussion';
+}
 ?>
-<header>
+<header class="<?php echo $classes; ?>">
   <nav class="header-default d-none d-md-block">
     <div class="container-fluid">
       <div class="row">
