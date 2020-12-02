@@ -10,13 +10,9 @@ $theme_url = get_stylesheet_directory();
 $functions_url = get_stylesheet_directory() . '/functions';
 $img_url = get_home_url() . '/wp-content/uploads';
 // funtions
-include($functions_url . '/template_bootstrap.php');
 include($functions_url . '/template_slickslide.php');
 include($functions_url . '/template_home.php');
 get_header();
-
-// main
-include($theme_url . '/template-parts/header/default.php');
 ?>
 <main class="homePage">
   <?php include('template-home/section1.php') ?>
