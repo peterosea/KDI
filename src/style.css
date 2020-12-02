@@ -106,6 +106,14 @@ header.entry-header {
   top: 100%;
 }
 
+.header-default .menu li.current-menu-parent a {
+  opacity: 1;
+}
+
+.header-default .menu li.current-menu-parent li.current-menu-item a {
+  color: #0054ff;
+}
+
 .header-default .menu li a {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 20px;
@@ -166,7 +174,6 @@ header.entry-header {
   top: 0;
   width: 100%;
   z-index: 9999;
-  position: absolute;
   background-color: #1b1d21;
 }
 
@@ -297,6 +304,16 @@ header.entry-header {
 
 .header-default-mobile .dropdown-menu ul.translate li a:hover {
   opacity: 1;
+}
+
+body.admin-bar header.entry-header {
+  z-index: 999999;
+}
+
+@media (min-width: 768px) {
+  body.admin-bar header.entry-header {
+    z-index: auto;
+  }
 }
 
 body.home {

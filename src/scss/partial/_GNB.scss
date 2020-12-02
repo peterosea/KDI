@@ -61,6 +61,14 @@ header.entry-header {
           top: 100%;
         }
       }
+      &.current-menu-parent {
+        a {
+          opacity: 1;
+        }
+        li.current-menu-item a {
+          color: $electric-blue;
+        }
+      }
       a {
         font-family: $NotoSansKR;
         font-size: 20px;
@@ -102,7 +110,6 @@ header.entry-header {
     }
   }
 }
-
 .header-default-mobile {
   display: flex;
   justify-content: space-between;
@@ -111,7 +118,6 @@ header.entry-header {
   top: 0;
   width: 100%;
   z-index: 9999;
-  position: absolute;
   background-color: $dark;
 
   .logo {
@@ -216,6 +222,14 @@ header.entry-header {
           opacity: 1;
         }
       }
+    }
+  }
+}
+body.admin-bar {
+  header.entry-header {
+    z-index: 999999;
+    @include respond-to("md") {
+      z-index: auto;
     }
   }
 }
