@@ -159,6 +159,17 @@ body.home {
         display: none;
       }
     }
+    .boxTitle {
+      font-family: $NotoSansKR;
+      font-size: 14px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.86;
+      letter-spacing: normal;
+      text-align: left;
+      color: $black-three;
+    }
     .content {
       position: absolute;
       height: 100%;

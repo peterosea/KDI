@@ -521,6 +521,18 @@ body.home {
   display: none;
 }
 
+.section2 .box .boxTitle {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.86;
+  letter-spacing: normal;
+  text-align: left;
+  color: #222222;
+}
+
 .section2 .box .content {
   position: absolute;
   height: 100%;

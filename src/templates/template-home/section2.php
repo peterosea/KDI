@@ -23,7 +23,7 @@
       <div class="col-12 col-lg-4 mb-4 mb-lg-0">
         <div class="box box-2 newsBox slickBox">
           <div class="dotContainer">
-            <span>news</span>
+            <span class="boxTitle">news</span>
             <div id="dot"></div>
           </div>
           <div class="newsSlider">
@@ -97,7 +97,7 @@
       <div class="col-12 col-lg-4 mb-4 mb-lg-0">
         <div class="box box-2 noticeBox slickBox">
           <div class="dotContainer">
-            <span>news</span>
+            <span class="boxTitle">공지사항</span>
             <div id="dot"></div>
           </div>
           <div class="noticeSlider">
