@@ -1,0 +1,33 @@
+.pageHeader {
+  overflow: hidden;
+  position: relative;
+  .post-thumbnail {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .pageAttributeBox {
+    position: relative;
+    z-index: 200;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $white;
+
+    .title {
+      font-family: $NotoSansKR;
+      font-size: 40px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: -2px;
+      margin-bottom: 10px;
+    }
+  }
+}
