@@ -1,3 +1,7 @@
+header.entry-header {
+  position: relative;
+  z-index: 9999;
+}
 .header-default {
   position: relative;
   z-index: 2;
@@ -9,6 +13,7 @@
     left: 40px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 2;
   }
   .menu-gnb-container > .menu > .menu-item {
     padding: 30px 0;

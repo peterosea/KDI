@@ -8,6 +8,13 @@ body.home {
       max-width: 1200px;
     }
   }
+
+  footer.default {
+    border-top: 0;
+    .logo {
+      opacity: 0.5;
+    }
+  }
 }
 .homePage {
   font-family: $NotoSansKR;

@@ -6,7 +6,7 @@ $img_url = get_home_url() . '/wp-content/uploads';
   <div class="container-fluid">
     <div class="row">
       <div class="col-2 d-none d-md-flex justifyCenter">
-        <img src="<?php echo $img_url ?>/1562.png" srcset="<?php echo $img_url ?>/1562@2x.png 2x, <?php echo $img_url ?>/1562@3x.png 3x">
+        <img class="logo" src="<?php echo $img_url ?>/1577.png" srcset="<?php echo $img_url ?>/1577@2x.png 2x, <?php echo $img_url ?>/1577@3x.png 3x">
       </div>
       <div class="col-12 col-md-10 alignRight align-items-center align-items-md-end">
         <div class="listWrap">
