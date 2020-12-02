@@ -38,6 +38,7 @@ html body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: 2;
 }
 
 .header-default .menu-gnb-container > .menu > .menu-item {
@@ -302,6 +303,14 @@ body.home {
   body.home .container {
     max-width: 1200px;
   }
+}
+
+body.home footer.default {
+  border-top: 0;
+}
+
+body.home footer.default .logo {
+  opacity: 0.5;
 }
 
 .homePage {
@@ -843,6 +852,7 @@ body.home footer.default .snsList .insta {
 
 footer.default {
   padding-top: 60px;
+  border-top: 1px solid #dddddd;
 }
 
 footer.default .container-fluid {
@@ -984,6 +994,11 @@ footer.default .cc {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  width: 100%;
+}
+
+.pageHeader .post-thumbnail img {
+  width: 100%;
 }
 
 .pageHeader .pageAttributeBox {
@@ -1004,5 +1019,74 @@ footer.default .cc {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: -2px;
+  margin-bottom: 10px;
+}
+
+main.templatePage {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+main.templatePage h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: -1.75px;
+  text-align: left;
+  color: #222222;
+}
+
+main.templatePage p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.13;
+  letter-spacing: -0.8px;
+  text-align: left;
+  color: #222222;
+}
+
+main.templatePage .promise {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: -1.1px;
+  text-align: left;
+  color: #222222;
+}
+
+main.templatePage .sign {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: -1.2px;
+  text-align: left;
+  color: #222222;
+}
+
+main.templatePage figure.sign {
+  position: relative;
+}
+
+main.templatePage figure.sign img {
+  position: absolute;
+  bottom: -30px;
+  left: 170px;
+}
+
+.wp-block-columns .wp-block-column {
+  -ms-flex-preferred-size: auto !important;
+      flex-basis: auto !important;
 }
 /*# sourceMappingURL=style.css.map */
