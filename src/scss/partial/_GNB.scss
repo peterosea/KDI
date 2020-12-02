@@ -85,7 +85,7 @@ header.entry-header {
       .sub-menu {
         width: 100vw;
         position: absolute;
-        top: -100%;
+        top: -200%;
         padding: 23px 0;
         left: 0;
         display: flex;
@@ -228,8 +228,5 @@ header.entry-header {
 body.admin-bar {
   header.entry-header {
     z-index: 999999;
-    @include respond-to("md") {
-      z-index: auto;
-    }
   }
 }

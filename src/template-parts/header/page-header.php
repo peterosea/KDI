@@ -1,5 +1,5 @@
 <?php if (is_singular() && twentynineteen_can_show_post_thumbnail()) : ?>
-  <header class="pageHeader">
+  <header class="pageHeader d-none d-lg-block">
     <div class="pageAttributeBox">
       <div class="title">
         <?php single_post_title(); ?>

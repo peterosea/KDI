@@ -131,7 +131,7 @@ header.entry-header {
 .header-default .menu li .sub-menu {
   width: 100vw;
   position: absolute;
-  top: -100%;
+  top: -200%;
   padding: 23px 0;
   left: 0;
   display: -webkit-box;
@@ -308,12 +308,6 @@ header.entry-header {
 
 body.admin-bar header.entry-header {
   z-index: 999999;
-}
-
-@media (min-width: 768px) {
-  body.admin-bar header.entry-header {
-    z-index: auto;
-  }
 }
 
 body.home {
@@ -1049,16 +1043,28 @@ main.templatePage {
   padding-bottom: 150px;
 }
 
+main.templatePage .container {
+  max-width: 1440px;
+}
+
 main.templatePage h2 {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 35px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: -1.75px;
-  text-align: left;
+  font-size: 20px;
+  line-height: 1.9;
+  letter-spacing: -1px;
+  text-align: center;
   color: #222222;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  main.templatePage h2 {
+    font-size: 35px;
+    line-height: 1.43;
+    letter-spacing: -1.75px;
+    text-align: left;
+    color: #222222;
+  }
 }
 
 main.templatePage p {
@@ -1110,5 +1116,165 @@ main.templatePage figure.sign img {
 .wp-block-columns .wp-block-column {
   -ms-flex-preferred-size: auto !important;
       flex-basis: auto !important;
+}
+
+.timeline {
+  list-style: none;
+  width: 100%;
+  max-width: 1800px;
+  padding: 0;
+  position: relative;
+}
+
+.timeline:before {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 1px;
+  background-color: #dddddd;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .timeline:before {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
+  }
+}
+
+.timeline > li {
+  margin-bottom: 50px;
+}
+
+.timeline > li .historyWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.timeline > li .historyWrap .innerWrap {
+  padding-left: 30px;
+}
+
+.timeline > li .historyWrap .content {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .timeline > li .historyWrap .content {
+    padding-left: 120px;
+    margin-bottom: 50px;
+  }
+}
+
+.timeline > li .historyWrap .thumbnail img {
+  max-width: 100%;
+  height: auto;
+}
+
+.timeline > li .historyWrap .date,
+.timeline > li .historyWrap .title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.8px;
+  color: #222222;
+}
+
+.timeline > li .historyWrap .date {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.timeline > li .historyWrap .date:before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #dddddd;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 20px;
+  right: 100%;
+}
+
+@media (min-width: 768px) {
+  .timeline > li .historyWrap .date:before {
+    width: 150px;
+  }
+}
+
+.timeline > li .historyWrap .date:after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #0054ff;
+  border-radius: 999px;
+  right: 100%;
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .timeline > li:nth-child(2n) .innerWrap {
+    padding-left: 0px;
+  }
+  .timeline > li:nth-child(2n) .content {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-left: 0px;
+    padding-right: 120px;
+  }
+  .timeline > li:nth-child(2n) .date::before {
+    left: 100%;
+    margin-left: 20px;
+  }
+  .timeline > li:nth-child(2n) .date::after {
+    left: 100%;
+    margin-left: 20px;
+  }
+  .timeline > li:nth-child(2n) .historyWrap {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 50%;
+  }
+  .timeline > li:nth-child(2n) .innerWrap {
+    padding-right: 50px;
+  }
+  .timeline > li:nth-child(2n-1) .content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .timeline > li:nth-child(2n-1) .historyWrap {
+    padding-left: 50%;
+  }
+  .timeline > li:nth-child(2n-1) .innerWrap {
+    padding-left: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
