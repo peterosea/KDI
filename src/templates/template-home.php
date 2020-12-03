@@ -11,7 +11,6 @@ $functions_url = get_stylesheet_directory() . '/functions';
 $img_url = get_home_url() . '/wp-content/uploads';
 // funtions
 include($functions_url . '/template_slickslide.php');
-include($functions_url . '/template_home.php');
 get_header();
 ?>
 <main class="homePage">
