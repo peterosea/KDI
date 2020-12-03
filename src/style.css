@@ -1327,4 +1327,53 @@ main.mrlArchive ul .thumbnail img {
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
 }
+
+main.fuseArchive .container {
+  max-width: 1140px;
+}
+
+main.fuseArchive ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main.fuseArchive ul li {
+  margin-bottom: 100px;
+}
+
+main.fuseArchive ul li:last-child {
+  margin-bottom: 0;
+}
+
+main.fuseArchive ul .title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: -1.5px;
+  text-align: center;
+  color: #222222;
+  margin-bottom: 30px;
+}
+
+main.fuseArchive ul .thumbnail {
+  border: solid 1px #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 658px;
+}
 /*# sourceMappingURL=style.css.map */
