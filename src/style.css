@@ -1276,4 +1276,55 @@ main.templatePage figure.sign img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
+main.mrlArchive .container {
+  max-width: 1140px;
+}
+
+main.mrlArchive ul {
+  list-style: none;
+  padding: 0;
+}
+
+main.mrlArchive ul li {
+  margin-bottom: 100px;
+}
+
+main.mrlArchive ul li:last-child {
+  margin-bottom: 0;
+}
+
+main.mrlArchive ul .title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: -1.5px;
+  text-align: center;
+  color: #222222;
+  margin-bottom: 30px;
+}
+
+main.mrlArchive ul .thumbnail {
+  border: solid 1px #dddddd;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.mrlArchive ul .thumbnail img {
+  max-width: 890px;
+  height: auto;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
 /*# sourceMappingURL=style.css.map */
