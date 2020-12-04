@@ -14,7 +14,9 @@ get_header();
   </div>
 
   <figure class="post-thumbnail">
-    <img src="/wp-content/uploads/2767@3x.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="/wp-content/uploads/2767@3x.png 1568w, /wp-content/uploads/milky-way-1023340_1920pg 300w, /wp-content/uploads/milky-way-1023340_1920jpg 1024w, /wp-content/uploads/milky-way-1023340_1920pg 768w, /wp-content/uploads/2767@3x.png 1536w, /wp-content/uploads/milky-way-1023340_1920" sizes="(max-width: 1568px) 100vw, 1568px"> </figure><!-- .post-thumbnail -->
+    <img src="/wp-content/uploads/2767.png" srcset="/wp-content/uploads/2767@2x.png 2x,
+              /wp-content/uploads/2767@3x.png 3x">
+  </figure>
 </header>
 <main class="templatePage mrlArchive">
   <div class="container">
@@ -32,7 +34,6 @@ get_header();
             $mrlPost = <<<mrlPost
               <li>
                 <div class="content">
-                  <div class="id">$mrlp->post_id</div>
                   <div class="title">$mrlp->post_title</div>
                 </div>
                 <div class="thumbnail">$thumbnail</div>

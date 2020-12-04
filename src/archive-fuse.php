@@ -14,7 +14,9 @@ get_header();
   </div>
 
   <figure class="post-thumbnail">
-    <img src="/wp-content/uploads/2767@3x.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="/wp-content/uploads/2767@3x.jpg 1568w, /wp-content/uploads/milky-way-1023340_1920pg 300w, /wp-content/uploads/milky-way-1023340_1920jpg 1024w, /wp-content/uploads/milky-way-1023340_1920pg 768w, /wp-content/uploads/2767@3x.jpg 1536w, /wp-content/uploads/milky-way-1023340_1920" sizes="(max-width: 1568px) 100vw, 1568px"> </figure><!-- .post-thumbnail -->
+    <img src="/wp-content/uploads/2767.jpg" srcset="/wp-content/uploads/2767@2x.jpg 2x,
+              /wp-content/uploads/2767@3x.jpg 3x">
+  </figure>
 </header>
 <main class="templatePage fuseArchive">
   <div class="container">
