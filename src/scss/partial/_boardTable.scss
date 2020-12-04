@@ -76,69 +76,73 @@ table.boardTable {
     }
   }
 
-  h2.screen-reader-text {
-    display: none;
-  }
-
-  .paginationWrap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .nav-links {
-      margin: 0 10px;
-      display: flex;
-      align-items: center;
-      .meta-nav.screen-reader-text {
-        display: none;
-      }
-      .page-numbers {
-        padding: 0 10px;
-        font-size: 15px;
-        font-weight: 500;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.47;
-        letter-spacing: -0.6px;
-        text-align: left;
-        color: $very-light-pink-five;
-        text-decoration: none;
-      }
-      .page-numbers.current {
-        color: $electric-blue;
-      }
-      .page-numbers.next {
-        margin-left: 10px;
-      }
-      .page-numbers.prev {
-        margin-right: 10px;
-      }
-    }
-    .arrow,
-    .next,
-    .prev {
-      line-height: 0;
-      height: 40px;
-      width: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-      background-color: $very-light-pink-four;
-      &.start img {
-        transform: rotate(180deg);
-      }
-    }
-    .next.page-numbers {
-      display: flex;
-      align-items: center;
-      img {
-        transform: rotate(180deg);
-      }
-    }
-  }
   .noticeBadge {
     color: $electric-blue;
     display: inline-block;
     margin-right: 20px;
+  }
+}
+
+.boardTablePaginationWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h2.screen-reader-text {
+    display: none;
+  }
+
+  .nav-links {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    .meta-nav.screen-reader-text {
+      display: none;
+    }
+    .page-numbers {
+      padding: 0 10px;
+      font-size: 15px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.47;
+      letter-spacing: -0.6px;
+      text-align: left;
+      color: $very-light-pink-five;
+      text-decoration: none;
+    }
+    .page-numbers.current {
+      color: $electric-blue;
+    }
+    .page-numbers.next {
+      margin-left: 10px;
+    }
+    .page-numbers.prev {
+      margin-right: 10px;
+    }
+  }
+
+  .arrow,
+  .next,
+  .prev {
+    line-height: 0;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: $very-light-pink-four;
+    &.start img {
+      transform: rotate(180deg);
+    }
+  }
+
+  .next.page-numbers {
+    display: flex;
+    align-items: center;
+    img {
+      transform: rotate(180deg);
+    }
   }
 }

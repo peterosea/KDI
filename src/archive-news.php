@@ -147,7 +147,7 @@ get_header();
           $GLOBALS['wp_query'] = $custom_query;
           if ($wp_query->max_num_pages != 1) {
             echo <<<link
-              <div class="paginationWrap">
+              <div class="boardTablePaginationWrap">
               <a href="/news" class="start arrow">
               <img src="$img_url/1583.png"
                     srcset="$img_url/1583@2x.png 2x,

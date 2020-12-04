@@ -1470,11 +1470,13 @@ table.boardTable tbody td a {
   color: #222222;
 }
 
-table.boardTable h2.screen-reader-text {
-  display: none;
+table.boardTable .noticeBadge {
+  color: #0054ff;
+  display: inline-block;
+  margin-right: 20px;
 }
 
-table.boardTable .paginationWrap {
+.boardTablePaginationWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1486,7 +1488,11 @@ table.boardTable .paginationWrap {
           justify-content: center;
 }
 
-table.boardTable .paginationWrap .nav-links {
+.boardTablePaginationWrap h2.screen-reader-text {
+  display: none;
+}
+
+.boardTablePaginationWrap .nav-links {
   margin: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1496,11 +1502,11 @@ table.boardTable .paginationWrap .nav-links {
           align-items: center;
 }
 
-table.boardTable .paginationWrap .nav-links .meta-nav.screen-reader-text {
+.boardTablePaginationWrap .nav-links .meta-nav.screen-reader-text {
   display: none;
 }
 
-table.boardTable .paginationWrap .nav-links .page-numbers {
+.boardTablePaginationWrap .nav-links .page-numbers {
   padding: 0 10px;
   font-size: 15px;
   font-weight: 500;
@@ -1513,21 +1519,21 @@ table.boardTable .paginationWrap .nav-links .page-numbers {
   text-decoration: none;
 }
 
-table.boardTable .paginationWrap .nav-links .page-numbers.current {
+.boardTablePaginationWrap .nav-links .page-numbers.current {
   color: #0054ff;
 }
 
-table.boardTable .paginationWrap .nav-links .page-numbers.next {
+.boardTablePaginationWrap .nav-links .page-numbers.next {
   margin-left: 10px;
 }
 
-table.boardTable .paginationWrap .nav-links .page-numbers.prev {
+.boardTablePaginationWrap .nav-links .page-numbers.prev {
   margin-right: 10px;
 }
 
-table.boardTable .paginationWrap .arrow,
-table.boardTable .paginationWrap .next,
-table.boardTable .paginationWrap .prev {
+.boardTablePaginationWrap .arrow,
+.boardTablePaginationWrap .next,
+.boardTablePaginationWrap .prev {
   line-height: 0;
   height: 40px;
   width: 40px;
@@ -1544,14 +1550,14 @@ table.boardTable .paginationWrap .prev {
   background-color: #eeeeee;
 }
 
-table.boardTable .paginationWrap .arrow.start img,
-table.boardTable .paginationWrap .next.start img,
-table.boardTable .paginationWrap .prev.start img {
+.boardTablePaginationWrap .arrow.start img,
+.boardTablePaginationWrap .next.start img,
+.boardTablePaginationWrap .prev.start img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-table.boardTable .paginationWrap .next.page-numbers {
+.boardTablePaginationWrap .next.page-numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1560,14 +1566,8 @@ table.boardTable .paginationWrap .next.page-numbers {
           align-items: center;
 }
 
-table.boardTable .paginationWrap .next.page-numbers img {
+.boardTablePaginationWrap .next.page-numbers img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-}
-
-table.boardTable .noticeBadge {
-  color: #0054ff;
-  display: inline-block;
-  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */
