@@ -23,9 +23,9 @@ if (!empty($discussion) && absint($discussion->responses) > 0) {
   </nav>
   <nav class="header-default-mobile d-md-none">
     <div class="headerOrigin">
-      <div class="logo">
+      <a href="/" class="logo">
         <img src="<?php echo $img_url ?>/1573.png" srcset="<?php echo $img_url ?>/1573@2x.png 2x, <?php echo $img_url ?>/1573@3x.png 3x">
-      </div>
+      </a>
       <button type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" id="icon-40-리스트" width="40" height="40" viewBox="0 0 40 40">
           <defs>
