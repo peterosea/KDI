@@ -8,6 +8,9 @@
         <?php echo get_field('description'); ?>
       </div>
     </div>
-    <?php twentynineteen_post_thumbnail(); ?>
+    <?php
+    twentynineteen_post_thumbnail();
+    include('ieHeaderCover.php');
+    ?>
   </header>
 <?php endif; ?>

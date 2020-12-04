@@ -970,17 +970,22 @@ footer.default .cc {
   margin-top: 71px;
 }
 
-.pageHeader .post-thumbnail {
+.pageHeader figure.post-thumbnail {
+  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
+  height: 100%;
 }
 
-.pageHeader .post-thumbnail img {
+.pageHeader figure.post-thumbnail img {
+  width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .pageHeader .pageAttributeBox {

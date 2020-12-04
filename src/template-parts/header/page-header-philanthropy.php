@@ -11,4 +11,5 @@
     <img src="/wp-content/uploads/4006.jpg" srcset="/wp-content/uploads/4006@2x.jpg 2x,
               /wp-content/uploads/4006@3x.jpg 3x">
   </figure>
+  <?php include('ieHeaderCover.php'); ?>
 </header>

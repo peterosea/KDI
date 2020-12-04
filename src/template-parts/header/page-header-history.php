@@ -10,4 +10,5 @@
   <figure class="post-thumbnail">
     <img src="/wp-content/uploads/milky-way-1023340_1920.jpg">
   </figure>
+  <?php include('ieHeaderCover.php'); ?>
 </header>
