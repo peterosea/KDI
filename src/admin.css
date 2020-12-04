@@ -4,6 +4,11 @@
           box-sizing: border-box;
 }
 
+#adminmenu .wp-menu-image > img {
+  padding-bottom: 9px !important;
+  opacity: 1 !important;
+}
+
 body.ac-news span.dashicons.dashicons-no-alt.red {
   display: none;
 }
