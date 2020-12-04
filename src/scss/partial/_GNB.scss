@@ -277,6 +277,11 @@ header.entry-header {
     }
   }
 }
+body.home {
+  .fixedSubmenu {
+    border-bottom: 0;
+  }
+}
 body.admin-bar {
   header.entry-header {
     z-index: 999999;

@@ -369,6 +369,10 @@ header.entry-header {
   color: #0054ff;
 }
 
+body.home .fixedSubmenu {
+  border-bottom: 0;
+}
+
 body.admin-bar header.entry-header {
   z-index: 999999;
 }
@@ -532,6 +536,10 @@ body.home footer.default .logo {
   font-style: normal;
   letter-spacing: -0.8px;
   color: #ffffff;
+}
+
+.section2 {
+  margin-bottom: 150px;
 }
 
 @media (min-width: 992px) {
@@ -810,6 +818,7 @@ section.section3 {
 
 body.home footer.default {
   color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 body.home footer.default .box {

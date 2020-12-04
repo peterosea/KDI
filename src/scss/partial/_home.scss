@@ -140,6 +140,7 @@ body.home {
 
 // section2
 .section2 {
+  margin-bottom: 150px;
   @include respond-to("lg") {
     margin-top: -100px;
   }
