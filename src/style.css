@@ -1721,4 +1721,117 @@ main.boardTemplate .backList {
   color: #ffffff;
   text-decoration: none;
 }
+
+main.recruit .row.class {
+  margin-bottom: 60px;
+}
+
+main.recruit .borderBox {
+  border-radius: 10px;
+  border: solid 1px #cccccc;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.recruit .imgWrap {
+  margin-right: 50px;
+}
+
+main.recruit h2 {
+  font-size: 35px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: -1.75px;
+  text-align: left;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+main.recruit p {
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: -0.8px;
+  text-align: left;
+  color: #222222;
+}
+
+main.recruit p .pointColor {
+  color: #0054ff;
+}
+
+main.recruit .row.process {
+  margin-bottom: 100px;
+}
+
+main.recruit .processWrap {
+  position: relative;
+}
+
+main.recruit .processWrap .title {
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: -1.2px;
+  text-align: center;
+  color: #222222;
+}
+
+main.recruit .processWrap p {
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: -0.8px;
+  text-align: center;
+  color: #222222;
+}
+
+main.recruit .processWrap .round:after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 20px;
+  background-image: url(/wp-content/uploads/3-3@3x.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main.recruit .processWrap:last-child .round:after {
+  content: none;
+}
+
+main.recruit .round {
+  border-radius: 999px;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
 /*# sourceMappingURL=style.css.map */
