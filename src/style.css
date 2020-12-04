@@ -97,6 +97,11 @@ header.entry-header {
   margin-right: 0;
 }
 
+.header-default .menu li.current-menu-ancestor .sub-menu {
+  z-index: 2;
+  top: 100%;
+}
+
 .header-default .menu li:hover a {
   opacity: 1;
 }
@@ -904,6 +909,7 @@ footer.default .cc {
 .pageHeader {
   overflow: hidden;
   position: relative;
+  margin-top: 71px;
 }
 
 .pageHeader .post-thumbnail {
@@ -937,6 +943,10 @@ footer.default .cc {
   line-height: 1.5;
   letter-spacing: -2px;
   margin-bottom: 10px;
+}
+
+body.single .pageHeader {
+  margin-top: 0;
 }
 
 main.templatePage {

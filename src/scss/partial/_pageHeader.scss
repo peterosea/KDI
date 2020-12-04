@@ -1,6 +1,7 @@
 .pageHeader {
   overflow: hidden;
   position: relative;
+  margin-top: 71px;
   .post-thumbnail {
     position: absolute;
     top: 50%;
@@ -30,4 +31,7 @@
       margin-bottom: 10px;
     }
   }
+}
+body.single .pageHeader {
+  margin-top: 0;
 }

@@ -52,6 +52,12 @@ header.entry-header {
       &:last-child {
         margin-right: 0;
       }
+      &.current-menu-ancestor {
+        .sub-menu {
+          z-index: 2;
+          top: 100%;
+        }
+      }
       &:hover {
         a {
           opacity: 1;
