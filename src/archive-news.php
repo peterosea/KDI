@@ -6,7 +6,7 @@ $img_url = get_home_url() . '/wp-content/uploads';
 get_header();
 get_template_part('template-parts/header/page', 'header-news');
 ?>
-<main class="templatePage newsArchive">
+<main class="templatePage newsArchive cm1200">
   <div class="container">
     <div class="row">
       <div class="col">

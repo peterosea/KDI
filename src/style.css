@@ -944,6 +944,12 @@ main.templatePage {
   padding-bottom: 150px;
 }
 
+@media (min-width: 1439px) {
+  main.templatePage.cm1200 .container {
+    max-width: 1200px;
+  }
+}
+
 main.templatePage .container {
   max-width: 1440px;
 }
@@ -1277,10 +1283,6 @@ main.templatePage figure.sign img {
       flex-wrap: wrap;
 }
 
-main.mrlArchive .container {
-  max-width: 1140px;
-}
-
 main.mrlArchive ul {
   list-style: none;
   padding: 0;
@@ -1375,10 +1377,6 @@ main.fuseArchive ul .thumbnail {
       -ms-flex-pack: center;
           justify-content: center;
   height: 658px;
-}
-
-main.newsArchive .container {
-  max-width: 1140px;
 }
 
 table.boardTable {
