@@ -2,3 +2,8 @@
   height: 100%;
   box-sizing: border-box;
 }
+body.ac-news {
+  span.dashicons.dashicons-no-alt.red {
+    display: none;
+  }
+}
