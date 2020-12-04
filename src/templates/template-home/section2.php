@@ -97,15 +97,27 @@
       <div class="col-12 col-lg-4 mb-4 mb-lg-0">
         <div class="box box-2 noticeBox slickBox">
           <div class="dotContainer">
-            <span class="boxTitle">공지사항</span>
+            <span class="boxTitle">사회공헌</span>
             <div id="dot"></div>
           </div>
           <div class="noticeSlider">
             <?php
             $noticePosts = get_posts(array(
               'numberposts' => 3,
-              'post_type' => 'notice',
-              'post_status' => 'publish'
+              'post_type' => 'philanthropy',
+              'post_status' => 'publish',
+              'meta_query' => array(
+                'relation' => 'OR',
+                array(
+                  'key' => 'notice',
+                  'value' => '1',
+                  'compare' => '!='
+                ),
+                array(
+                  'key' => 'notice',
+                  'compare' => 'NOT EXISTS'
+                )
+              )
             ));
 
             foreach ($noticePosts as $np) {

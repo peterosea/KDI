@@ -4,7 +4,7 @@ $theme_url = get_stylesheet_directory();
 $functions_url = get_stylesheet_directory() . '/functions';
 $img_url = get_home_url() . '/wp-content/uploads';
 get_header();
-get_template_part('template-parts/header/page', 'header-news');
+get_template_part('template-parts/header/page', 'header-philanthropy');
 the_post();
 ?>
 <main class="templatePage cm1200 boardTemplate">

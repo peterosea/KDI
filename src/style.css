@@ -1569,17 +1569,17 @@ table.boardTable .noticeBadge {
           transform: rotate(180deg);
 }
 
-main.singleNews .row.header .col > div {
+main.boardTemplate .row.header .col > div {
   padding: 20px 30px;
   background-color: #f5f5f8;
   border-bottom: 1px solid #e8e8e8;
 }
 
-main.singleNews .row.header .postTitle {
+main.boardTemplate .row.header .postTitle {
   border-top: 2px solid #bbbcc8;
 }
 
-main.singleNews .row.header .postTitle span {
+main.boardTemplate .row.header .postTitle span {
   font-size: 20px;
   font-weight: bold;
   font-stretch: normal;
@@ -1590,7 +1590,7 @@ main.singleNews .row.header .postTitle span {
   color: #222222;
 }
 
-main.singleNews .row.header .info {
+main.boardTemplate .row.header .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1602,11 +1602,11 @@ main.singleNews .row.header .info {
           align-items: center;
 }
 
-main.singleNews .row.header .info .author {
+main.boardTemplate .row.header .info .author {
   margin-right: 50px;
 }
 
-main.singleNews .row.header .info .label {
+main.boardTemplate .row.header .info .label {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1620,7 +1620,7 @@ main.singleNews .row.header .info .label {
   display: inline-block;
 }
 
-main.singleNews .row.header .info .name {
+main.boardTemplate .row.header .info .name {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1632,11 +1632,11 @@ main.singleNews .row.header .info .name {
   color: #222222;
 }
 
-main.singleNews .content {
+main.boardTemplate .content {
   padding: 50px 30px;
 }
 
-main.singleNews .content p {
+main.boardTemplate .content p {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1648,23 +1648,23 @@ main.singleNews .content p {
   color: #222222;
 }
 
-main.singleNews table.navigation {
+main.boardTemplate table.navigation {
   width: 100%;
   border-top: 1px solid #bbbcc8;
   border-bottom: 1px solid #bbbcc8;
 }
 
-main.singleNews table.navigation td {
+main.boardTemplate table.navigation td {
   padding: 23px;
   border-bottom: 1px solid #e8e8e8;
 }
 
-main.singleNews table.navigation .prev img {
+main.boardTemplate table.navigation .prev img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-main.singleNews table.navigation tr td:first-child > div {
+main.boardTemplate table.navigation tr td:first-child > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1673,15 +1673,15 @@ main.singleNews table.navigation tr td:first-child > div {
           align-items: center;
 }
 
-main.singleNews table.navigation tr td:first-child > div span {
+main.boardTemplate table.navigation tr td:first-child > div span {
   margin-right: 10px;
 }
 
-main.singleNews table.navigation tr.next td {
+main.boardTemplate table.navigation tr.next td {
   border-bottom: 1px solid #bbbcc8;
 }
 
-main.singleNews table.navigation a {
+main.boardTemplate table.navigation a {
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -1693,7 +1693,7 @@ main.singleNews table.navigation a {
   text-decoration: none;
 }
 
-main.singleNews table.navigation .date {
+main.boardTemplate table.navigation .date {
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -1704,11 +1704,11 @@ main.singleNews table.navigation .date {
   color: #222222;
 }
 
-main.singleNews .row.navigation {
+main.boardTemplate .row.navigation {
   margin-bottom: 50px;
 }
 
-main.singleNews .backList {
+main.boardTemplate .backList {
   padding: 18px 50px;
   background-color: #0054ff;
   font-size: 16px;
