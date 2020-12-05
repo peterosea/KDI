@@ -8,12 +8,11 @@
           </div>
           <div class="content">
             <div>
-              <h1 class="title">차기다련장체계(천무)</h1>
-              <p>보병 전력증강을 위한<br />
-                장사거리/고정밀 유도로켓</p>
+              <h1 class="title">Multi launch rocket system Chunmoo</h1>
+              <p>Long range/high-precision guided rocket<br /> for enhancing infantry.</p>
             </div>
             <div class="moreBtnWrap">
-              <a href="/mrl/" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="/mrl/" class="moreBtn"><span>Read more</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -66,12 +65,13 @@
           </div>
           <div class="content">
             <div>
-              <h1 class="title">230mm급 무유도탄</h1>
-              <p>천무 발사대에서 운용가능한 <br />
-                지역제압용 무유도로켓</p>
+              <h1 class="title">230mm class unguided rocket</h1>
+              <p>
+                Unguided rocket for regional suppression<br /> that can be operated at the Cheonmu launcher
+              </p>
             </div>
             <div class="moreBtnWrap">
-              <a href="/mrl" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="/mrl" class="moreBtn"><span>Read more</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -84,12 +84,11 @@
           </div>
           <div class="content">
             <div>
-              <h1 class="title">전자식시한신관 등 신관류</h1>
-              <p>탄약이 요구하는 시간과 <br />
-                장소에서 작약을 폭발시키는 점화장치</p>
+              <h1 class="title">Fuze</h1>
+              <p>Ignition device to explode at the time and<br /> place the ammunition requires</p>
             </div>
             <div class="moreBtnWrap">
-              <a href="/fuse" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="/fuze" class="moreBtn"><span>Read more</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>

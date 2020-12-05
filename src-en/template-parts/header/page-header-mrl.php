@@ -1,9 +1,8 @@
 <header class="pageHeader d-none d-md-block">
   <div class="pageAttributeBox">
-    <div class="title">다련장</div>
+    <div class="title">Multi launch rocket system</div>
     <div class="description">
-      고도의 기동성, 신속한 사격, 기습적 대량 화력 집중으로 <br />
-      적 중심에 대한 신속한 타격 및 밀집된 표적을 제압 가능한 무기체계
+      Weapon system capable of quickly hitting<br /> the center of the enemy and Suppressing<br /> dense targets with high mobility, rapid<br /> fire, and focusing on fire.
     </div>
   </div>
 

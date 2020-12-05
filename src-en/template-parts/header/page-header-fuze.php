@@ -1,9 +1,8 @@
 <header class="pageHeader d-none d-md-block">
   <div class="pageAttributeBox">
-    <div class="title">신관</div>
+    <div class="title">Fuze</div>
     <div class="description">
-      탄약이 요구하는 시간과 장소에서<br />
-      작약을 폭발시키는 점화장치
+      Ignition device to explode at the time<br /> and place the ammunition requires
     </div>
   </div>
 
