@@ -15,7 +15,7 @@
         "scss/partial/_timeLine.scss",
         "scss/partial/_introduceMap.scss",
         "scss/partial/_mrlList.scss",
-        "scss/partial/_fuseList.scss",
+        "scss/partial/_fuzeList.scss",
         "scss/partial/_boardTable.scss",
         "scss/partial/_single-boardTemplate.scss",
         "scss/partial/_templateRecruit.scss"

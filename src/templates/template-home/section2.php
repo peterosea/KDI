@@ -89,7 +89,7 @@
                 장소에서 작약을 폭발시키는 점화장치</p>
             </div>
             <div class="moreBtnWrap">
-              <a href="/fuse" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="/fuze" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>
