@@ -24,7 +24,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <a href="#" class="btn"><span>회사소개 바로가기</span></a>
+              <a href="/ceo-인사말/" class="btn"><span>회사소개 바로가기</span></a>
             </div>
           </div>
         </div>

@@ -63,7 +63,7 @@ header.entry-header {
           opacity: 1;
         }
         .sub-menu {
-          z-index: 2;
+          z-index: 3;
           top: 100%;
         }
       }
@@ -226,6 +226,10 @@ header.entry-header {
           opacity: 0.5;
           transition: all 0.2s;
           &:hover {
+            opacity: 1;
+          }
+          &.en.en_US,
+          &.ko.ko_KR {
             opacity: 1;
           }
         }
