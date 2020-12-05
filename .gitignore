@@ -1,3 +1,4 @@
 .wordpress
 .wordpress-en
 backup
+.DS_Store
