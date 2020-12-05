@@ -1,0 +1,28 @@
+/*
+Theme Name: KDI
+Theme URI: https://peterosea.com/
+Description: 한화 방산업체(KDI)
+Author: peterosea
+Author URI: https://peterosea.com/
+Template: twentynineteen
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "utils/variable";
+@import "utils/respondTo";
+@import "partial/global";
+@import "partial/GNB";
+@import "partial/home";
+@import "partial/footer";
+@import "partial/pageHeader";
+@import "partial/templatePage";
+@import "partial/gutenberg";
+@import "partial/timeLine";
+@import "partial/introduceMap";
+@import "partial/mrlList";
+@import "partial/fuseList";
+@import "partial/boardTable";
+@import "partial/single-boardTemplate";
+@import "partial/templateRecruit";

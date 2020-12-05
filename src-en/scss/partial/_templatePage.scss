@@ -1,0 +1,74 @@
+main.templatePage {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  &.cm1200 {
+    .container {
+      @media (min-width: 1439px) {
+        max-width: 1200px;
+      }
+    }
+  }
+
+  .container {
+    max-width: 1440px;
+  }
+
+  h2 {
+    font-family: $NotoSansKR;
+    font-size: 20px;
+    line-height: 1.9;
+    letter-spacing: -1px;
+    text-align: center;
+    color: $black-three;
+    margin-bottom: 50px;
+
+    @include respond-to("md") {
+      font-size: 35px;
+      line-height: 1.43;
+      letter-spacing: -1.75px;
+      text-align: left;
+      color: $black-three;
+    }
+  }
+  p {
+    font-family: $NotoSansKR;
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.13;
+    letter-spacing: -0.8px;
+    text-align: left;
+    color: $black-three;
+  }
+  .promise {
+    font-family: $NotoSansKR;
+    font-size: 22px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.82;
+    letter-spacing: -1.1px;
+    text-align: left;
+    color: $black-three;
+  }
+  .sign {
+    font-family: $NotoSansKR;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.08;
+    letter-spacing: -1.2px;
+    text-align: left;
+    color: $black-three;
+  }
+  figure.sign {
+    position: relative;
+    img {
+      position: absolute;
+      bottom: -30px;
+      left: 170px;
+    }
+  }
+}

@@ -32,9 +32,41 @@ services:
       - maria:/var/lib/mysql
     networks:
       - backend
+  
+  wordpress-en:
+    image: wordpress:php7.4
+    restart: always
+    ports:
+      - 40002:80
+    environment:
+      WORDPRESS_DB_HOST: db-en
+      WORDPRESS_DB_USER: wp
+      WORDPRESS_DB_PASSWORD: wp
+      WORDPRESS_DB_NAME: wp
+    volumes:
+      - ./src-en:/var/www/html/wp-content/themes/base
+      - ./.wordpress-en:/var/www/html
+    networks:
+      - backend
+
+  db-en:
+    image: mariadb
+    restart: always
+    ports:
+      - 3306
+    environment:
+      MYSQL_DATABASE: wp
+      MYSQL_USER: wp
+      MYSQL_PASSWORD: wp
+      MYSQL_RANDOM_ROOT_PASSWORD: "1"
+    volumes:
+      - maria-en:/var/lib/mysql
+    networks:
+      - backend
 
 networks:
   backend:
     driver: bridge
 volumes:
   maria:
+  maria-en:

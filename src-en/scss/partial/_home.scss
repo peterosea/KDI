@@ -1,0 +1,355 @@
+// Home Page 공통
+body.home {
+  background-color: $black-two;
+  color: $white;
+
+  .container {
+    @media (min-width: 1439px) {
+      max-width: 1200px;
+    }
+  }
+
+  footer.default {
+    border-top: 0;
+    .logo {
+      opacity: 0.5;
+    }
+  }
+}
+.homePage {
+  font-family: $NotoSansKR;
+  font-weight: 300;
+
+  img {
+    max-width: 100%;
+  }
+  .sectionTitle {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.65;
+    letter-spacing: -2px;
+  }
+  section h1.title {
+    font-size: 32px;
+    @include respond-to("lg") {
+      font-size: 40px;
+    }
+  }
+}
+
+// Section 1
+.section1 {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .slider {
+    position: relative;
+    height: 100%;
+    * {
+      outline: none;
+    }
+    .slickSlideBg,
+    .slickSlideBg .slick-list,
+    .slickSlideBg .slick-track,
+    .slickSlideBg .slick-slide {
+      height: 100%;
+    }
+    .slickSlideBg .slick-slide > div {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+    }
+
+    .slickSlideText {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 120px;
+
+      .slick-dots {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .slick-dots li {
+        width: auto;
+        margin: 0 4px;
+      }
+      .slick-dots li button::before {
+        content: unset;
+      }
+      .slick-dots li button {
+        background-color: $white;
+        border-radius: 999px;
+        width: 8px;
+        height: 8px;
+        transition: all 0.3s;
+        will-change: background-color, width;
+      }
+      .slick-dots li.slick-active button {
+        background-color: orange;
+        width: 20px;
+      }
+    }
+    .title {
+      margin-bottom: 20px;
+      word-break: keep-all;
+      font-family: $NotoSansKR;
+      font-size: 36px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.54;
+      letter-spacing: -1.8px;
+      text-align: left;
+      color: $white;
+    }
+    .dimText {
+      color: $white;
+      opacity: 0.5;
+      font-size: 21px;
+      font-weight: 100;
+      line-height: 1.48;
+      letter-spacing: -1.05px;
+    }
+  }
+  .content.row {
+    margin-bottom: 50px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 18px 50px;
+    background-color: $electric-blue;
+    border-radius: 0;
+    span {
+      font-family: $NotoSansKR;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: -0.8px;
+      color: $white;
+    }
+  }
+}
+
+// section2
+.section2 {
+  margin-bottom: 150px;
+  @include respond-to("lg") {
+    margin-top: -100px;
+  }
+
+  .box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &.imgBg {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    .imgBg {
+      padding-top: 80%;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include respond-to("lg") {
+        padding-top: 0;
+        background: none;
+      }
+      img {
+        display: none;
+      }
+    }
+    .boxTitle {
+      font-family: $NotoSansKR;
+      font-size: 14px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.86;
+      letter-spacing: normal;
+      text-align: left;
+      color: $black-three;
+    }
+    .content {
+      position: absolute;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      padding: 16px;
+      font-size: 20px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: -1px;
+      @include respond-to("lg") {
+        padding: 38px;
+      }
+      .title {
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 1.2;
+        letter-spacing: -2px;
+        word-break: keep-all;
+        @include respond-to("lg") {
+          font-size: 40px;
+        }
+      }
+      p {
+        margin-bottom: 0;
+      }
+      .moreBtnWrap {
+        display: flex;
+      }
+      .moreBtn {
+        padding: 10px 20px;
+        color: $white;
+        border: 1px solid $white;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        span {
+          font-family: $NotoSansKR;
+          font-size: 12px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1;
+          letter-spacing: -0.6px;
+          color: $white;
+          margin-right: 4px;
+        }
+      }
+    }
+    &-1 {
+      .imgBg {
+        background-position-x: 20%;
+        img {
+          @include respond-to("lg") {
+            display: block;
+          }
+        }
+      }
+      .content {
+        text-align: right;
+        right: 0;
+        top: 0;
+        .moreBtnWrap {
+          justify-content: flex-end;
+        }
+      }
+    }
+    &-2 {
+      overflow: hidden;
+      img {
+        width: 100%;
+        margin-top: -200px;
+      }
+      @include respond-to("lg") {
+        height: 100%;
+        .imgBg {
+          background: url("/wp-content/uploads/1567-1.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100%;
+        }
+      }
+      .content {
+        top: 0;
+        left: 0;
+      }
+    }
+    &-3 {
+      .content {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  div.slickBox.slickBox.box {
+    background-color: $white;
+    color: $black-three;
+    padding: 40px;
+    .dotContainer {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    #dot .slick-dots {
+      position: relative;
+      bottom: auto;
+      display: flex;
+      * {
+        all: unset;
+      }
+      li {
+        margin-right: 5px;
+        font-size: 0;
+        cursor: pointer;
+        &::last-child {
+          margin-right: 0;
+        }
+        &.slick-active button {
+          background-color: $electric-blue;
+        }
+      }
+      button {
+        width: 10px;
+        height: 10px;
+        background-color: $very-light-pink-two;
+        border-radius: 999px;
+        &::before {
+          content: none;
+        }
+      }
+    }
+    .slide {
+      outline: none;
+    }
+    .content {
+      padding: 0;
+      position: relative;
+    }
+    p {
+      font-family: $NotoSansKR;
+      font-size: 16px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2;
+      letter-spacing: -0.8px;
+      text-align: left;
+      color: $brown-grey-two;
+    }
+    .title {
+      font-family: $NotoSansKR;
+      font-size: 30px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: -1.5px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// section3: 조직도
+section.section3 {
+  background-color: $black;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
