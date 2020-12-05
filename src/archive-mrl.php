@@ -5,7 +5,7 @@ $img_url = get_home_url() . '/wp-content/uploads';
 get_header();
 get_template_part('template-parts/header/page', 'header-mrl');
 ?>
-<main class="templatePage mrlArchive cm1200">
+<main class="templatePage mrlArchive">
   <div class="container">
     <div class="row">
       <div class="col">
