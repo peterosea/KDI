@@ -13,11 +13,10 @@
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
       'background-position': 'center',
-      'background-image': s,
-      'border': '1px solid red'
+      'background-image': s
     });
   }
   if (document.querySelector('body').classList.contains('ie')) {
-    forIe();
+    forIE();
   }
 </script>

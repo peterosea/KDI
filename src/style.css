@@ -1882,22 +1882,23 @@ main.recruit .processWrap p {
   color: #222222;
 }
 
-main.recruit .processWrap .round:after {
-  content: "";
-  display: block;
-  width: 28px;
-  height: 20px;
-  background-image: url(/wp-content/uploads/3-3@3x.png);
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  left: 100%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-main.recruit .processWrap:last-child .round:after {
-  content: none;
+@media (min-width: 1200px) {
+  main.recruit .processWrap .round:after {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 20px;
+    background-image: url(/wp-content/uploads/3-3@3x.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 100%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  main.recruit .processWrap:last-child .round:after {
+    content: none;
+  }
 }
 
 main.recruit .round {

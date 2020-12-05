@@ -62,20 +62,22 @@ main.recruit {
       text-align: center;
       color: $black-three;
     }
-    .round:after {
-      content: "";
-      display: block;
-      width: 28px;
-      height: 20px;
-      background-image: url(/wp-content/uploads/3-3@3x.png);
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      left: 100%;
-      transform: translateX(-50%);
-    }
-    &:last-child .round:after {
-      content: none;
+    @include respond-to("xl") {
+      .round:after {
+        content: "";
+        display: block;
+        width: 28px;
+        height: 20px;
+        background-image: url(/wp-content/uploads/3-3@3x.png);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        left: 100%;
+        transform: translateX(-50%);
+      }
+      &:last-child .round:after {
+        content: none;
+      }
     }
   }
   .round {

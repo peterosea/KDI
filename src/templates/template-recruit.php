@@ -31,7 +31,7 @@ get_template_part('template-parts/header/page', 'header-recruit');
       </div>
     </div>
     <div class="row process">
-      <div class="col processWrap">
+      <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
           <img src="<? echo $img_url ?>/1590.png" srcset="<? echo $img_url ?>/1590@2x.png 2x, <? echo $img_url ?>/1590@3x.png 3x">
         </div>
@@ -45,7 +45,7 @@ get_template_part('template-parts/header/page', 'header-recruit');
         </p>
       </div>
 
-      <div class="col processWrap">
+      <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
           <img src="<? echo $img_url ?>/1588.png" srcset="<? echo $img_url ?>/1588@2x.png 2x, <? echo $img_url ?>/1588@3x.png 3x">
         </div>
@@ -59,7 +59,7 @@ get_template_part('template-parts/header/page', 'header-recruit');
         </p>
       </div>
 
-      <div class="col processWrap">
+      <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
           <img src="<? echo $img_url ?>/1587.png" srcset="<? echo $img_url ?>/1587@2x.png 2x, <? echo $img_url ?>/1587@3x.png 3x">
         </div>
@@ -75,7 +75,7 @@ get_template_part('template-parts/header/page', 'header-recruit');
         </p>
       </div>
 
-      <div class="col processWrap">
+      <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
           <img src="<? echo $img_url ?>/1589.png" srcset="<? echo $img_url ?>/1589@2x.png 2x, <? echo $img_url ?>/1589@3x.png 3x">
         </div>
@@ -108,7 +108,7 @@ get_template_part('template-parts/header/page', 'header-recruit');
       </div>
     </div>
     <div class="row process">
-      <div class="col processWrap">
+      <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
           <img src="<? echo $img_url ?>/1590.png" srcset="<? echo $img_url ?>/1590@2x.png 2x, <? echo $img_url ?>/1590@3x.png 3x">
         </div>
@@ -122,7 +122,7 @@ get_template_part('template-parts/header/page', 'header-recruit');
         </p>
       </div>
 
-      <div class="col processWrap">
+      <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
           <img src="<? echo $img_url ?>/1588.png" srcset="<? echo $img_url ?>/1588@2x.png 2x, <? echo $img_url ?>/1588@3x.png 3x">
         </div>
@@ -136,7 +136,7 @@ get_template_part('template-parts/header/page', 'header-recruit');
         </p>
       </div>
 
-      <div class="col processWrap">
+      <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
           <img src="<? echo $img_url ?>/1587.png" srcset="<? echo $img_url ?>/1587@2x.png 2x, <? echo $img_url ?>/1587@3x.png 3x">
         </div>
@@ -152,7 +152,7 @@ get_template_part('template-parts/header/page', 'header-recruit');
         </p>
       </div>
 
-      <div class="col processWrap">
+      <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
           <img src="<? echo $img_url ?>/1589.png" srcset="<? echo $img_url ?>/1589@2x.png 2x, <? echo $img_url ?>/1589@3x.png 3x">
         </div>
