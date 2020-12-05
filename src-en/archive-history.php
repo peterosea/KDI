@@ -5,7 +5,7 @@ $img_url = get_home_url() . '/wp-content/uploads';
 get_header();
 get_template_part('template-parts/header/page', 'header-history');
 ?>
-<main class="templatePage">
+<main class="templatePage history">
   <div class="container">
     <h2 style="text-align:center">
       <span class="d-block d-lg-inline">㈜코리아 디펜스 인더스트리는</span>

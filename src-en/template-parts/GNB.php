@@ -15,7 +15,12 @@ if (!empty($discussion) && absint($discussion->responses) > 0) {
         <div class="col">
           <?php wp_nav_menu() ?>
         </div>
-        <a href="#" class="translate">
+        <?php
+        $lo_link = '/en';
+        if (get_locale() == 'en_US')
+          $lo_link = '/';
+        ?>
+        <a href="<? echo $lo_link ?>" class="translate">
           <span>한글/Eng</span>
         </a>
       </div>
@@ -65,12 +70,12 @@ if (!empty($discussion) && absint($discussion->responses) > 0) {
           <hr>
           <ul class="translate">
             <li>
-              <a href="#">
+              <a href="/" class="ko <?php echo get_locale() ?>">
                 <span>한글</span>
               </a>
             </li>
             <li>
-              <a href="#" class="quickBtn">English</a>
+              <a href="/en" class="en quickBtn <?php echo get_locale() ?>">English</a>
             </li>
           </ul>
         </div>

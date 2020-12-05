@@ -2,7 +2,7 @@
 $theme_url = get_stylesheet_directory();
 $img_url = get_home_url() . '/wp-content/uploads';
 ?>
-<footer class="default pb-5 pt-5">
+<footer class="default">
   <div class="container-fluid">
     <div class="row">
       <div class="col-2 d-none d-md-flex justifyCenter">

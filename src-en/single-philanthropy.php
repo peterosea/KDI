@@ -7,7 +7,7 @@ get_header();
 get_template_part('template-parts/header/page', 'header-philanthropy');
 the_post();
 ?>
-<main class="templatePage cm1200 boardTemplate">
+<main class="templatePage boardTemplate">
   <div class="container">
     <div class="row header">
       <div class="col">
@@ -25,7 +25,7 @@ the_post();
           </div>
           <div class="date">
             <span class="name">
-              <?php the_date() ?>
+              <?php the_date('Y-m-d') ?>
             </span>
           </div>
         </div>

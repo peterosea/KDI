@@ -13,7 +13,7 @@
                 장사거리/고정밀 유도로켓</p>
             </div>
             <div class="moreBtnWrap">
-              <a href="#" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="/mrl/" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@
                 지역제압용 무유도로켓</p>
             </div>
             <div class="moreBtnWrap">
-              <a href="#" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="/mrl" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -84,12 +84,12 @@
           </div>
           <div class="content">
             <div>
-              <h1 class="title">230mm급 무유도탄</h1>
-              <p>천무 발사대에서 운용가능한 <br />
-                지역제압용 무유도로켓</p>
+              <h1 class="title">전자식시한신관 등 신관류</h1>
+              <p>탄약이 요구하는 시간과 <br />
+                장소에서 작약을 폭발시키는 점화장치</p>
             </div>
             <div class="moreBtnWrap">
-              <a href="#" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="/fuse" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>

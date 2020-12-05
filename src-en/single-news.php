@@ -7,7 +7,7 @@ get_header();
 get_template_part('template-parts/header/page', 'header-news');
 the_post();
 ?>
-<main class="templatePage cm1200 boardTemplate">
+<main class="templatePage boardTemplate">
   <div class="container">
     <div class="row header">
       <div class="col">
@@ -25,7 +25,7 @@ the_post();
           </div>
           <div class="date">
             <span class="name">
-              <?php the_date() ?>
+              <?php the_date('Y-m-d') ?>
             </span>
           </div>
         </div>
@@ -41,10 +41,6 @@ the_post();
     <div class="row navigation">
       <div class="col">
         <table class="navigation">
-          <colgroup>
-            <col span="1" style="width: 15%;">
-            <col span="1" style="width: 70%;">
-          </colgroup>
           <tbody>
             <?php
             $prev_post = get_previous_post();
