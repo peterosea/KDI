@@ -844,13 +844,23 @@ body.home footer.default .snsList .insta {
 }
 
 footer.default {
-  padding-top: 60px;
   border-top: 1px solid #dddddd;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-footer.default .container-fluid {
-  padding-left: 50px;
-  padding-right: 50px;
+@media (min-width: 576px) {
+  footer.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 576px) {
+  footer.default .container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 footer.default .justifyCenter {
@@ -882,6 +892,25 @@ footer.default .listWrap {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  footer.default .listWrap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 footer.default .listWrap ul {
@@ -894,7 +923,14 @@ footer.default .listWrap ul {
 
 footer.default .pageList {
   margin: 0;
-  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  footer.default .pageList {
+    margin-right: 50px;
+    margin-bottom: 0px;
+  }
 }
 
 footer.default .pageList li {
@@ -968,13 +1004,23 @@ footer.default .snsList .insta {
 footer.default .cc {
   opacity: 0.5;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.86;
+  line-height: 1.2;
   letter-spacing: normal;
-  color: inherit;
+  text-align: center;
+  color: #222222;
+}
+
+@media (min-width: 576px) {
+  footer.default .cc {
+    font-size: 14px;
+    line-height: 2.86;
+    color: inherit;
+    text-align: left;
+  }
 }
 
 .pageHeader {
