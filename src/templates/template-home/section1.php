@@ -2,7 +2,9 @@
   <div class="slider">
     <div class="slickSlideBg">
       <div>
-        <div style="background-image: url(<?php echo $img_url ?>/10.jpg)"></div>
+        <div style="background-image: url(<?php echo $img_url ?>/10.jpg)">
+          <img src="<?php echo $img_url ?>/10.jpg">
+        </div>
       </div>
     </div>
     <div class="slickSlideText">
