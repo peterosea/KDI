@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="box box-3 imgBg" style="background-image: url(<?php echo $img_url ?>/pc-004021816-1.jpg)">
+        <div class="box box-3 imgBg" style="background-image: url(<?php echo $img_url ?>/image3-min.png)">
           <div class="imgBg">
           </div>
           <div class="content">
