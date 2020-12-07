@@ -1792,7 +1792,7 @@ main.boardTemplate .row.header .col div.postTitle {
   main.boardTemplate .row.header .col div.postTitle {
     border-bottom: 1px solid #e8e8e8;
     border-top: 2px solid #bbbcc8;
-    padding-bottom: inherit;
+    padding-bottom: 20px;
   }
 }
 
@@ -1820,7 +1820,7 @@ main.boardTemplate .row.header .col div.info {
 
 @media (min-width: 576px) {
   main.boardTemplate .row.header .col div.info {
-    padding-top: inherit;
+    padding-top: 20px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;

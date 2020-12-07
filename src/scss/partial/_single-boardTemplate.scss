@@ -27,7 +27,7 @@ main.boardTemplate {
       @include respond-to("sm") {
         border-bottom: 1px solid $very-light-pink-three;
         border-top: 2px solid $cloudy-blue-two;
-        padding-bottom: inherit;
+        padding-bottom: 20px;
       }
       span {
         font-size: 20px;
@@ -46,7 +46,7 @@ main.boardTemplate {
       border-bottom: 1px solid $very-light-pink-three;
       padding-top: 0;
       @include respond-to("sm") {
-        padding-top: inherit;
+        padding-top: 20px;
         justify-content: flex-end;
       }
 
