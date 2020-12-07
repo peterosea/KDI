@@ -134,7 +134,7 @@ header.entry-header {
 }
 
 .header-default .menu li .sub-menu {
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: -200%;
   padding: 23px 0;
