@@ -839,12 +839,6 @@ body.home footer.default .snsList .insta {
   fill: white;
 }
 
-@media (min-width: 768px) {
-  body.home footer.default .snsList .insta {
-    opacity: 0.5;
-  }
-}
-
 footer.default {
   border-top: 1px solid #dddddd;
   padding-top: 30px;
@@ -969,8 +963,6 @@ footer.default .snsList .box {
   width: 30px;
   height: 30px;
   background-color: #000000;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
   border-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,6 +978,12 @@ footer.default .snsList .box {
 @media (min-width: 768px) {
   footer.default .snsList .box {
     opacity: 0.5;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    will-change: opacity;
+  }
+  footer.default .snsList .box:hover {
+    opacity: 1;
   }
 }
 
@@ -1000,6 +998,12 @@ footer.default .snsList .insta {
 @media (min-width: 768px) {
   footer.default .snsList .insta {
     opacity: 0.5;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    will-change: opacity;
+  }
+  footer.default .snsList .insta:hover {
+    opacity: 1;
   }
 }
 
