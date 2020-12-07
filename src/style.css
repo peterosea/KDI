@@ -131,6 +131,8 @@ header.entry-header {
   opacity: 0.5;
   color: #ffffff;
   text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header-default .menu li .sub-menu {
@@ -271,8 +273,8 @@ header.entry-header {
   color: #ffffff;
   text-decoration: none;
   opacity: 0.5;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header-default-mobile .headerOrigin .dropdown-menu ul.menuList li a:hover {
@@ -303,8 +305,8 @@ header.entry-header {
   color: #ffffff;
   text-decoration: none;
   opacity: 0.5;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header-default-mobile .headerOrigin .dropdown-menu ul.translate li a:hover {

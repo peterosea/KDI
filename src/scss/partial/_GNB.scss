@@ -87,6 +87,7 @@ header.entry-header {
         opacity: 0.5;
         color: $white;
         text-decoration: none;
+        transition: all 0.3s;
       }
       .sub-menu {
         width: 100%;
@@ -198,7 +199,7 @@ header.entry-header {
           color: $white;
           text-decoration: none;
           opacity: 0.5;
-          transition: all 0.2s;
+          transition: all 0.3s;
           &:hover {
             opacity: 1;
           }
@@ -224,7 +225,7 @@ header.entry-header {
           color: $white;
           text-decoration: none;
           opacity: 0.5;
-          transition: all 0.2s;
+          transition: all 0.3s;
           &:hover {
             opacity: 1;
           }
