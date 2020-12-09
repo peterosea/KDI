@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "AAAA,AAAA,UAAU,CAAC,GAAG,CAAC;EACb,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,UAAU;CACvB;;AACD,AAAA,UAAU,CAAC,cAAc,GAAG,GAAG,CAAC;EAC9B,cAAc,EAAE,cAAc;EAC9B,OAAO,EAAE,YAAY;CACtB;;AACD,AACE,IADE,AAAA,QAAQ,CACV,IAAI,AAAA,UAAU,AAAA,iBAAiB,AAAA,IAAI,CAAC;EAClC,OAAO,EAAE,IAAI;CACd",
     "sources": [
-        "../src/scss/admin.scss"
+        "../../kdi_ko/Theme/scss/admin.scss"
     ],
     "names": [],
     "file": "admin.css"

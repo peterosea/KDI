@@ -2,11 +2,11 @@
   "liveSassCompile.settings.formats": [
     {
       "extensionName": ".css",
-      "savePath": "./kdi_ko", // 원하는 경로 지정
+      "savePath": "./kdi_ko/Theme", // 원하는 경로 지정
     },
     {
       "extensionName": ".css",
-      "savePath": "./kdi_en", // 원하는 경로 지정
+      "savePath": "./kdi_en/Theme", // 원하는 경로 지정
     }
   ],
   "liveSassCompile.settings.autoprefix": [

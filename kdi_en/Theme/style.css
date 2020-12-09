@@ -589,9 +589,26 @@ body.home footer.default .logo {
 }
 
 .section2 .box .imgBg {
-  padding-top: 80%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 575px) {
+  .section2 .box .imgBg {
+    height: 345px;
+  }
+}
+
+@media (min-width: 576px) {
+  .section2 .box .imgBg {
+    padding-top: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .section2 .box .imgBg {
+    padding-top: 80%;
+  }
 }
 
 @media (min-width: 992px) {
