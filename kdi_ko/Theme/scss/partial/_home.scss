@@ -166,10 +166,17 @@ body.home {
       background-position: right;
     }
     .imgBg {
-      padding-top: 80%;
       background-size: cover;
       background-repeat: no-repeat;
-
+      @include respond-to("xsm") {
+        height: 345px;
+      }
+      @include respond-to("sm") {
+        padding-top: 100%;
+      }
+      @include respond-to("md") {
+        padding-top: 80%;
+      }
       @include respond-to("lg") {
         padding-top: 0;
         background: none;

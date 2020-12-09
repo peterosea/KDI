@@ -91,7 +91,18 @@
     </div>
     <div class="row mb-4 pb-1">
       <div class="col-12 col-lg-8 mb-4 mb-lg-0">
-        <div class="box box-3 imgBg" style="background-image: url(<?php echo $img_url ?>/2820.jpg)">
+        <style>
+          .sds81678273 {
+            background-image: url(<?php echo $img_url ?>/2827.jpg);
+          }
+
+          @media screen and (min-width: 992px) {
+            .sds81678273 {
+              background-image: url(<?php echo $img_url ?>/2820.jpg);
+            }
+          }
+        </style>
+        <div class="box box-3 imgBg sds81678273">
           <div class="imgBg">
           </div>
           <div class="content">
