@@ -30,7 +30,19 @@
             $newsPosts = get_posts(array(
               'numberposts' => 3,
               'post_type' => 'news',
-              'post_status' => 'publish'
+              'post_status' => 'publish',
+              'meta_query' => array(
+                'relation' => 'OR',
+                array(
+                  'key' => 'notice',
+                  'value' => '1',
+                  'compare' => '!='
+                ),
+                array(
+                  'key' => 'notice',
+                  'compare' => 'NOT EXISTS'
+                )
+              )
             ));
 
             foreach ($newsPosts as $np) {

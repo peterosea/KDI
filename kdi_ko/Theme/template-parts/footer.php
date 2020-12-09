@@ -10,7 +10,7 @@ $img_url = get_home_url() . '/wp-content/uploads';
       </div>
       <div class="col-12 col-md-10 alignRight align-items-center align-items-md-end">
         <div class="listWrap">
-          <ul class="pageList">
+          <ul class="pageList mr-0">
             <li>
               <a href="#">이용약관</a>
             </li>
@@ -18,7 +18,7 @@ $img_url = get_home_url() . '/wp-content/uploads';
               <a href="#">개인정보처리방침</a>
             </li>
           </ul>
-          <ul class="snsList">
+          <ul class="snsList d-none">
             <li>
               <a href="#" class="box">
                 <svg xmlns="http://www.w3.org/2000/svg" width="8.479" height="16.245" viewBox="0 0 8.479 16.245">
@@ -49,9 +49,8 @@ $img_url = get_home_url() . '/wp-content/uploads';
           </ul>
         </div>
         <div class='cc'>
-          <span class="d-none d-md-inline">Hanwha </span>
           <span>
-            Copyright©2013 HANWHA GROUP ALL RIGHTS RESERVED.
+            Copyright©2020 Korea Defense Industry corp
           </span>
         </div>
       </div>

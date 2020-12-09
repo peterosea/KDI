@@ -23,7 +23,7 @@
       <div class="col-12 col-lg-4 mb-4 mb-lg-0">
         <div class="box box-2 newsBox slickBox">
           <div class="dotContainer">
-            <span class="boxTitle">news</span>
+            <span class="boxTitle">KDI 소식</span>
             <div id="dot"></div>
           </div>
           <div class="newsSlider">
@@ -31,7 +31,19 @@
             $newsPosts = get_posts(array(
               'numberposts' => 3,
               'post_type' => 'news',
-              'post_status' => 'publish'
+              'post_status' => 'publish',
+              'meta_query' => array(
+                'relation' => 'OR',
+                array(
+                  'key' => 'notice',
+                  'value' => '1',
+                  'compare' => '!='
+                ),
+                array(
+                  'key' => 'notice',
+                  'compare' => 'NOT EXISTS'
+                )
+              )
             ));
 
             foreach ($newsPosts as $np) {
