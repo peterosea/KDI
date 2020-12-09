@@ -4,6 +4,8 @@ services:
   wordpress:
     image: wordpress:php7.4
     restart: always
+    ports:
+      - 40001:80
     expose:
       - "80"
     environment:

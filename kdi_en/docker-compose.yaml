@@ -4,8 +4,8 @@ services:
   wordpress:
     image: wordpress:php7.4
     restart: always
-    expose:
-      - "80"
+    ports:
+      - 40002:80
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wp
