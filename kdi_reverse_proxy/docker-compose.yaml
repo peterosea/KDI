@@ -1,0 +1,21 @@
+version: '3.7'
+services:
+  proxy:
+    image: 'nginx-alpine'
+    networks:
+      - kdi_ko
+      - kdi_en
+    ports:
+      - 40003:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./includes:/etc/nginx/includes
+      - ./backend-not-found.html:/var/www/html/backend-not-found.html
+
+networks:
+  kdi_ko:
+    external:
+      name: kdi_ko_wp
+  kdi_en:
+    external:
+      name: kdi_en_wp
