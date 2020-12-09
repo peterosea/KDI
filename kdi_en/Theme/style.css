@@ -2038,6 +2038,13 @@ main.boardTemplate .backList {
   }
 }
 
+@media (max-width: 575px) {
+  main.recruit {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+
 main.recruit .row.class {
   margin-bottom: 60px;
 }
@@ -2045,17 +2052,23 @@ main.recruit .row.class {
 main.recruit .borderBox {
   border-radius: 10px;
   border: solid 1px #cccccc;
-  padding: 50px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
 }
 
-main.recruit .imgWrap {
-  margin-right: 50px;
+@media (min-width: 576px) {
+  main.recruit .borderBox {
+    padding: 50px;
+    gap: 50px;
+  }
 }
 
 main.recruit h2 {
