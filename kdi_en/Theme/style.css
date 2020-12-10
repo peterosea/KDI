@@ -853,6 +853,7 @@ body.home footer.default .logo {
   letter-spacing: -1.5px;
   text-align: left;
   margin-bottom: 30px;
+  word-break: break-all;
 }
 
 section.section3 {
@@ -2164,4 +2165,3 @@ main.recruit .round {
           justify-content: center;
   margin-bottom: 30px;
 }
-/*# sourceMappingURL=style.css.map */
