@@ -346,21 +346,21 @@ body.home {
       font-weight: 300;
       font-stretch: normal;
       font-style: normal;
-      line-height: 2;
+      line-height: 1.8;
       letter-spacing: -0.8px;
       text-align: left;
       color: $brown-grey-two;
     }
     .title {
       font-family: $NotoSansKR;
-      font-size: 30px;
+      font-size: 26px;
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.33;
       letter-spacing: -1.5px;
       text-align: left;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       word-break: break-all;
     }
   }

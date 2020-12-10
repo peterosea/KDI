@@ -837,7 +837,7 @@ body.home footer.default .logo {
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2;
+  line-height: 1.8;
   letter-spacing: -0.8px;
   text-align: left;
   color: #999999;
@@ -845,14 +845,14 @@ body.home footer.default .logo {
 
 .section2 div.slickBox.slickBox.box .title {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.33;
   letter-spacing: -1.5px;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   word-break: break-all;
 }
 
