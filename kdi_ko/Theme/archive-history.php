@@ -8,7 +8,7 @@ get_template_part('template-parts/header/page', 'header-history');
 <main class="templatePage history">
   <div class="container">
     <h2 style="text-align:center">
-      <span class="d-block d-lg-inline">㈜코리아 디펜스 인더스트리는</span>
+      <span class="d-block d-lg-inline">㈜코리아디펜스인더스트리는</span>
       <span class="d-block d-lg-inline">아낌없는 투자와 연구개발 노력을 통해</span><br class="d-none d-lg-inline" />
       <span>국내 대표 방산기업으로 성장하겠습니다.</span>
     </h2>

@@ -78,7 +78,7 @@
           </div>
           <div class="content">
             <div>
-              <h1 class="title">230mm급 무유도탄</h1>
+              <h1 class="title">230mm급무유도탄</h1>
               <p>천무 발사대에서 운용가능한 <br />
                 지역제압용 무유도로켓</p>
             </div>
