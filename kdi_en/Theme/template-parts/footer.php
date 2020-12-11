@@ -12,7 +12,7 @@ $img_url = get_home_url() . '/wp-content/uploads';
         <div class="listWrap">
           <ul class="pageList mr-0">
             <li>
-              <a href="#">Terms of Use</a>
+              <a href="#">Terms</a>
             </li>
             <li>
               <a href="#">Privacy Policy</a>

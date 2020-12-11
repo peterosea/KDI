@@ -2,7 +2,7 @@
   <div class="pageAttributeBox">
     <div class="title">Multi launch rocket system</div>
     <div class="description">
-      Weapon system capable of quickly hitting<br /> the center of the enemy and Suppressing<br /> dense targets with high mobility, rapid<br /> fire, and focusing on fire.
+      Weapon system capable of quickly hitting the center of the enemy and Suppressing<br /> dense targets with high mobility, rapid fire, and focusing on fire.
     </div>
   </div>
 

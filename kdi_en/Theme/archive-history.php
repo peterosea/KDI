@@ -8,7 +8,7 @@ get_template_part('template-parts/header/page', 'header-history');
 <main class="templatePage history">
   <div class="container">
     <h2 style="text-align:center">
-      Korea Defense Industry Co., Ltd. Will grow into a leading defense company in Korea through generous investment and research and development efforts.
+      <b>Korea Defense Industry Co., Ltd.</b> Will grow into<br /> a leading defense company in Korea through generous investment<br /> and research and development efforts.
     </h2>
     <div class="row">
       <div class="col">
