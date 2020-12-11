@@ -23,7 +23,7 @@ get_template_part('template-parts/header/page', 'header');
           <div>
             <h2>신입채용</h2>
             <p>
-              <span class="pointColor d-block">코리아디펜스인더스트리의 미래를 함께 할 가슴 뜨거운 인재들을 기다리고 있습니다.</span>
+              <span class="pointColor d-block">(주)코리아디펜스인더스트리의 미래를 함께 할 가슴 뜨거운 인재들을 기다리고 있습니다.</span>
               모집 시기와 인턴십 기간, 지원 대상은 부문별로 상이하니 세부 모집공고를 확인해 주시기 바랍니다.
             </p>
           </div>
@@ -100,7 +100,7 @@ get_template_part('template-parts/header/page', 'header');
           <div>
             <h2>경력채용</h2>
             <p>
-              <span class="pointColor d-block">코리아디펜스인더스트리를 더욱 뜨겁게 만들어 줄 인재들을 모집합니다.</span>
+              <span class="pointColor d-block">(주)코리아디펜스인더스트리를 더욱 뜨겁게 만들어 줄 인재들을 모집합니다.</span>
               모집 시기는 수시, 상시로 진행되며 지원 대상은 모집공고에 부합되는 경력이면 누구나 가능합니다.
             </p>
           </div>
