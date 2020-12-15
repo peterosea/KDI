@@ -212,6 +212,15 @@ body.home {
       @include respond-to("lg") {
         padding: 38px;
       }
+      a.title {
+        color: $black-three;
+        text-decoration: none;
+        transition: color 0.3s;
+        will-change: color;
+        &:hover {
+          color: $electric-blue;
+        }
+      }
       .title {
         font-size: 28px;
         font-weight: 900;

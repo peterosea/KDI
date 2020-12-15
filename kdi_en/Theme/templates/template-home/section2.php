@@ -47,10 +47,11 @@
 
             foreach ($newsPosts as $np) {
               $text = get_the_excerpt($np);
+              $link = get_the_permalink($np);
               $slide = <<<Slide
                   <div class="slide">
                     <div class="content">
-                      <h1 class="title">$np->post_title</h1>
+                      <a href="$link" class="title">$np->post_title</a>
                       <p>$text...</p>
                     </div>
                   </div>
@@ -133,10 +134,11 @@
 
             foreach ($noticePosts as $np) {
               $text = get_the_excerpt($np);
+              $link = get_the_permalink($np);
               $slide = <<<Slide
                   <div class="slide">
                     <div class="content">
-                      <h1 class="title">$np->post_title</h1>
+                      <a href="$link" class="title">$np->post_title</a>
                       <p>$text...</p>
                     </div>
                   </div>
