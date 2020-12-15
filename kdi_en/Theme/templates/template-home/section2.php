@@ -22,7 +22,7 @@
       <div class="col-12 col-lg-4 mb-4 mb-lg-0">
         <div class="box box-2 newsBox slickBox">
           <div class="dotContainer">
-            <span class="boxTitle">news</span>
+            <span class="boxTitle">KDI News</span>
             <div id="dot"></div>
           </div>
           <div class="newsSlider">
@@ -108,7 +108,7 @@
       <div class="col-12 col-lg-4 mb-4 mb-lg-0">
         <div class="box box-2 noticeBox slickBox">
           <div class="dotContainer">
-            <span class="boxTitle">사회공헌</span>
+            <span class="boxTitle">CSR</span>
             <div id="dot"></div>
           </div>
           <div class="noticeSlider">
