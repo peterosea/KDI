@@ -215,6 +215,7 @@ body.home {
       a.title {
         color: $black-three;
         text-decoration: none;
+        outline: none;
         transition: color 0.3s;
         will-change: color;
         &:hover {

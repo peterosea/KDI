@@ -665,6 +665,7 @@ body.home footer.default .logo {
 .section2 .box .content a.title {
   color: #222222;
   text-decoration: none;
+  outline: none;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
   will-change: color;
