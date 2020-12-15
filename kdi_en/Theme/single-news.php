@@ -18,7 +18,7 @@ the_post();
         </div>
         <div class="info">
           <div class="author">
-            <span class="label">작성자</span>
+            <span class="label">Author</span>
             <span class="name">
               <?php the_author() ?>
             </span>
@@ -46,7 +46,7 @@ the_post();
             $prev_post = get_previous_post();
             $prev_title = '';
             $prev_date = '';
-            $prev_link = '이전 글이 없습니다.';
+            $prev_link = 'No previous posts.';
             if ($prev_post) {
               $prev_title = strip_tags(str_replace('"', '', $prev_post->post_title));
               $prev_link = '<a rel="prev" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_title . '">' . $prev_title . '</a>';
@@ -56,7 +56,7 @@ the_post();
             <tr class="prev">
               <td>
                 <div>
-                  <span>이전글</span>
+                  <span>previous post</span>
                   <img src="$img_url/10-1.png" srcset="$img_url/10@2x.png 2x, $img_url/10@3x.png 3x">
                 </div>
               </td>
@@ -72,7 +72,7 @@ the_post();
             $next_post = get_next_post();
             $next_title = '';
             $next_date = '';
-            $next_link = '다음 글이 없습니다.';
+            $next_link = 'No next posts.';
             if ($next_post) {
               $next_title = strip_tags(str_replace('"', '', $next_post->post_title));
               $next_link = '<a rel="prev" href="' . get_permalink($next_post->ID) . '" title="' . $next_title . '">' . $next_title . '</a>';
@@ -82,7 +82,7 @@ the_post();
             <tr class="next">
               <td>
                 <div>
-                  <span>다음글</span>
+                  <span>next post</span>
                   <img src="$img_url/10-1.png" srcset="$img_url/10@2x.png 2x, $img_url/10@3x.png 3x">
                 </div>
               </td>
@@ -101,7 +101,7 @@ the_post();
     </div>
     <div class="row">
       <div class="col text-right">
-        <a href="/news/" class="backList">목록</a>
+        <a href="/news/" class="backList">Posts list</a>
       </div>
     </div>
   </div>

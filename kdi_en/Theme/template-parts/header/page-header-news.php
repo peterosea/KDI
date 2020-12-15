@@ -1,9 +1,9 @@
 <header class="pageHeader d-none d-md-block">
   <div class="pageAttributeBox">
-    <div class="title">KDI 소식</div>
-    <div class="description">
+    <div class="title">KDI News</div>
+    <!-- <div class="description">
       KDI의 소식을 알려드립니다.
-    </div>
+    </div> -->
   </div>
 
   <figure class="post-thumbnail">

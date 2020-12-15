@@ -10,10 +10,10 @@ get_template_part('template-parts/header/page', 'header-news');
   <div class="container boardTable">
     <div class="row d-none d-sm-flex tableHeader">
       <div class="col">
-        제목
+        title
       </div>
       <div class="col-12 col-sm-4 col-md-2 text-sm-center">
-        등록일
+        date
       </div>
     </div>
     <?php
