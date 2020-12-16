@@ -4,7 +4,7 @@ $theme_url = get_stylesheet_directory();
 $functions_url = get_stylesheet_directory() . '/functions';
 $img_url = get_home_url() . '/wp-content/uploads';
 get_header();
-get_template_part('template-parts/header/page', 'header-philanthropy');
+get_template_part('template-parts/header/page', 'header-csr-activities');
 ?>
 <main class="templatePage newsArchive">
   <div class="container boardTable">
@@ -25,7 +25,7 @@ get_template_part('template-parts/header/page', 'header-philanthropy');
 
     // Define custom query parameters
     $args    = array(
-      'post_type'      => 'philanthropy', // post types
+      'post_type'      => 'csr-activities', // post types
       'posts_per_page' => 10,
       'meta_query' => array(
         'relation' => 'OR',
@@ -43,7 +43,7 @@ get_template_part('template-parts/header/page', 'header-philanthropy');
     );
 
     $noticeArgs = array(
-      'post_type'      => 'philanthropy',
+      'post_type'      => 'csr-activities',
       'meta_query'     => array(
         array(
           'key'        => 'notice',
@@ -129,7 +129,7 @@ HTML;
       if ($wp_query->max_num_pages != 1) {
         echo <<<HTML
               <div class="boardTablePaginationWrap">
-              <a href="/philanthropy" class="start arrow">
+              <a href="/csr-activities" class="start arrow">
               <img src="$img_url/1583.png"
                     srcset="$img_url/1583@2x.png 2x,
                             $img_url/1583@3x.png 3x">
@@ -138,7 +138,7 @@ HTML;
         the_posts_pagination($pagination_args);
         $endPage = $wp_query->max_num_pages;
         echo <<<HTML
-              <a href="/philanthropy/page/$endPage" class="end arrow">
+              <a href="/csr-activities/page/$endPage" class="end arrow">
               <img src="$img_url/1583.png"
                     srcset="$img_url/1583@2x.png 2x,
                             $img_url/1583@3x.png 3x">

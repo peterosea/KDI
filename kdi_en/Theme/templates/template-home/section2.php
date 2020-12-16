@@ -116,7 +116,7 @@ HTML;
             <?php
             $noticePosts = get_posts(array(
               'numberposts' => 3,
-              'post_type' => 'philanthropy',
+              'post_type' => 'csr-activities',
               'post_status' => 'publish',
               'meta_query' => array(
                 'relation' => 'OR',
