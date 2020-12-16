@@ -9,7 +9,7 @@ if (!empty($discussion) && absint($discussion->responses) > 0) {
   <nav class="header-default d-none d-md-block">
     <div class="container-fluid">
       <div class="row">
-        <a href="/" class="logo">
+        <a href="/en" class="logo">
           <img src="<?php echo $img_url ?>/1573.png" srcset="<?php echo $img_url ?>/1573@2x.png 2x, <?php echo $img_url ?>/1573@3x.png 3x">
         </a>
         <div class="col">
