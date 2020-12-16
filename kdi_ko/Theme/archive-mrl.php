@@ -18,14 +18,14 @@ get_template_part('template-parts/header/page', 'header-mrl');
 
           foreach ($mrlPosts as $mrlp) {
             $thumbnail = get_the_post_thumbnail($mrlp->ID);
-            $mrlPost = <<<mrlPost
+            $mrlPost = <<<HTML
               <li>
                 <div class="content">
                   <div class="title">$mrlp->post_title</div>
                 </div>
                 <div class="thumbnail">$thumbnail</div>
               </li>
-            mrlPost;
+HTML;
             echo $mrlPost;
           }
           ?>

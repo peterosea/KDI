@@ -18,7 +18,7 @@ get_template_part('template-parts/header/page', 'header');
       <div class="col">
         <div class="borderBox">
           <div class="imgWrap">
-            <img src="<? echo $img_url ?>/1100.png" srcset="<? echo $img_url ?>/1100@2x.png 2x, <? echo $img_url ?>/1100@3x.png 3x">
+            <img src="<?php echo $img_url ?>/1100.png" srcset="<?php echo $img_url ?>/1100@2x.png 2x, <?php echo $img_url ?>/1100@3x.png 3x">
           </div>
           <div>
             <h2>신입채용</h2>
@@ -33,7 +33,7 @@ get_template_part('template-parts/header/page', 'header');
     <div class="row process">
       <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
-          <img src="<? echo $img_url ?>/1590.png" srcset="<? echo $img_url ?>/1590@2x.png 2x, <? echo $img_url ?>/1590@3x.png 3x">
+          <img src="<?php echo $img_url ?>/1590.png" srcset="<?php echo $img_url ?>/1590@2x.png 2x, <?php echo $img_url ?>/1590@3x.png 3x">
         </div>
         <div class="title">
           1 원서접수
@@ -47,7 +47,7 @@ get_template_part('template-parts/header/page', 'header');
 
       <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
-          <img src="<? echo $img_url ?>/1588.png" srcset="<? echo $img_url ?>/1588@2x.png 2x, <? echo $img_url ?>/1588@3x.png 3x">
+          <img src="<?php echo $img_url ?>/1588.png" srcset="<?php echo $img_url ?>/1588@2x.png 2x, <?php echo $img_url ?>/1588@3x.png 3x">
         </div>
         <div class="title">
           2 서류전형
@@ -61,7 +61,7 @@ get_template_part('template-parts/header/page', 'header');
 
       <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
-          <img src="<? echo $img_url ?>/1587.png" srcset="<? echo $img_url ?>/1587@2x.png 2x, <? echo $img_url ?>/1587@3x.png 3x">
+          <img src="<?php echo $img_url ?>/1587.png" srcset="<?php echo $img_url ?>/1587@2x.png 2x, <?php echo $img_url ?>/1587@3x.png 3x">
         </div>
         <div class="title">
           3 면접전형
@@ -77,7 +77,7 @@ get_template_part('template-parts/header/page', 'header');
 
       <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
-          <img src="<? echo $img_url ?>/1589.png" srcset="<? echo $img_url ?>/1589@2x.png 2x, <? echo $img_url ?>/1589@3x.png 3x">
+          <img src="<?php echo $img_url ?>/1589.png" srcset="<?php echo $img_url ?>/1589@2x.png 2x, <?php echo $img_url ?>/1589@3x.png 3x">
         </div>
         <div class="title">
           4 최종합격
@@ -95,7 +95,7 @@ get_template_part('template-parts/header/page', 'header');
       <div class="col">
         <div class="borderBox">
           <div class="imgWrap">
-            <img src="<? echo $img_url ?>/1570.png" srcset="<? echo $img_url ?>/1570@2x.png 2x, <? echo $img_url ?>/1570@3x.png 3x">
+            <img src="<?php echo $img_url ?>/1570.png" srcset="<?php echo $img_url ?>/1570@2x.png 2x, <?php echo $img_url ?>/1570@3x.png 3x">
           </div>
           <div>
             <h2>경력채용</h2>
@@ -110,7 +110,7 @@ get_template_part('template-parts/header/page', 'header');
     <div class="row process">
       <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
-          <img src="<? echo $img_url ?>/1590.png" srcset="<? echo $img_url ?>/1590@2x.png 2x, <? echo $img_url ?>/1590@3x.png 3x">
+          <img src="<?php echo $img_url ?>/1590.png" srcset="<?php echo $img_url ?>/1590@2x.png 2x, <?php echo $img_url ?>/1590@3x.png 3x">
         </div>
         <div class="title">
           1 원서접수
@@ -124,7 +124,7 @@ get_template_part('template-parts/header/page', 'header');
 
       <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
-          <img src="<? echo $img_url ?>/1588.png" srcset="<? echo $img_url ?>/1588@2x.png 2x, <? echo $img_url ?>/1588@3x.png 3x">
+          <img src="<?php echo $img_url ?>/1588.png" srcset="<?php echo $img_url ?>/1588@2x.png 2x, <?php echo $img_url ?>/1588@3x.png 3x">
         </div>
         <div class="title">
           2 서류전형
@@ -138,7 +138,7 @@ get_template_part('template-parts/header/page', 'header');
 
       <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
-          <img src="<? echo $img_url ?>/1587.png" srcset="<? echo $img_url ?>/1587@2x.png 2x, <? echo $img_url ?>/1587@3x.png 3x">
+          <img src="<?php echo $img_url ?>/1587.png" srcset="<?php echo $img_url ?>/1587@2x.png 2x, <?php echo $img_url ?>/1587@3x.png 3x">
         </div>
         <div class="title">
           3 면접전형
@@ -154,7 +154,7 @@ get_template_part('template-parts/header/page', 'header');
 
       <div class="col-12 col-md-6 col-xl processWrap">
         <div class="round">
-          <img src="<? echo $img_url ?>/1589.png" srcset="<? echo $img_url ?>/1589@2x.png 2x, <? echo $img_url ?>/1589@3x.png 3x">
+          <img src="<?php echo $img_url ?>/1589.png" srcset="<?php echo $img_url ?>/1589@2x.png 2x, <?php echo $img_url ?>/1589@3x.png 3x">
         </div>
         <div class="title">
           4 최종합격

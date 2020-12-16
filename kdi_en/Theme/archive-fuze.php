@@ -18,7 +18,7 @@ get_template_part('template-parts/header/page', 'header-fuze');
 
           foreach ($fuzePosts as $fuzep) {
             $thumbnail = get_the_post_thumbnail($fuzep->ID);
-            $fuzePost = <<<fuzePost
+            $fuzePost = <<<HTML
               <li class="col-12 col-md-6">
                 <div class="content">
                   <div class="id">$fuzep->post_id</div>
@@ -26,7 +26,7 @@ get_template_part('template-parts/header/page', 'header-fuze');
                 </div>
                 <div class="thumbnail">$thumbnail</div>
               </li>
-            fuzePost;
+HTML;
             echo $fuzePost;
           }
           ?>

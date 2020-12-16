@@ -20,7 +20,7 @@ if (!empty($discussion) && absint($discussion->responses) > 0) {
         if (get_locale() == 'en_US')
           $lo_link = '/';
         ?>
-        <a href="<? echo $lo_link ?>" class="translate">
+        <a href="<?php echo $lo_link ?>" class="translate">
           <span>한글/Eng</span>
         </a>
       </div>

@@ -69,7 +69,7 @@ get_template_part('template-parts/header/page', 'header-philanthropy');
         $_permalink = get_the_permalink();
         $_date = get_the_date('Y-m-d');
         $_isNotice = get_field('notice');
-        echo <<<render
+        echo <<<HTML
         <div class="row notice list">
           <div class="col">
             <span class="noticeBadge">공지</span>
@@ -79,7 +79,7 @@ get_template_part('template-parts/header/page', 'header-philanthropy');
             <span class="date">$_date</span>
           </div>
         </div>
-      render;
+HTML;
       endwhile;
       while ($custom_query->have_posts()) :
         $custom_query->the_post();
@@ -95,7 +95,7 @@ get_template_part('template-parts/header/page', 'header-philanthropy');
         $_permalink = get_the_permalink();
         $_date = get_the_date('Y-m-d');
         $_isNotice = get_field('notice');
-        echo <<<render
+        echo <<<HTML
         <div class="row list">
           <div class="col">
             <a href="$_permalink" class="title">$_title</a>
@@ -104,7 +104,7 @@ get_template_part('template-parts/header/page', 'header-philanthropy');
             <span class="date">$_date</span>
           </div>
         </div>
-      render;
+HTML;
       endwhile;
 
       /**
@@ -114,11 +114,11 @@ get_template_part('template-parts/header/page', 'header-philanthropy');
        * https://codex.wordpress.org/Function_Reference/the_posts_pagination
        *
        */
-      $arrow = <<<link
+      $arrow = <<<HTML
               <img src="$img_url/16.png"
                   srcset="$img_url/16@2x.png 2x,
                           $img_url/16@3x.png 3x">
-            link;
+HTML;
       $pagination_args = array(
         'mid_size'           => 5,
         'prev_text'          => __($arrow, 'theme-domain'),
@@ -127,24 +127,24 @@ get_template_part('template-parts/header/page', 'header-philanthropy');
       );
       $GLOBALS['wp_query'] = $custom_query;
       if ($wp_query->max_num_pages != 1) {
-        echo <<<link
+        echo <<<HTML
               <div class="boardTablePaginationWrap">
               <a href="/philanthropy" class="start arrow">
               <img src="$img_url/1583.png"
                     srcset="$img_url/1583@2x.png 2x,
                             $img_url/1583@3x.png 3x">
               </a>
-              link;
+HTML;
         the_posts_pagination($pagination_args);
         $endPage = $wp_query->max_num_pages;
-        echo <<<link
+        echo <<<HTML
               <a href="/philanthropy/page/$endPage" class="end arrow">
               <img src="$img_url/1583.png"
                     srcset="$img_url/1583@2x.png 2x,
                             $img_url/1583@3x.png 3x">
               </a>
               </div>
-              link;
+HTML;
       }
     } else {
       /**

@@ -25,7 +25,7 @@ get_template_part('template-parts/header/page', 'header-history');
             foreach ($historyPosts as $hp) {
               $thumbnail = get_the_post_thumbnail($hp->post_id);
               $date = get_field('date');
-              $timeline = <<<Timeline
+              $timeline = <<<HTML
                 <li>
                   <div class="historyWrap">
                     <div class="innerWrap">
@@ -37,7 +37,7 @@ get_template_part('template-parts/header/page', 'header-history');
                     </div>
                   </div>
                 </li>
-              Timeline;
+HTML;
               echo $timeline;
             }
             ?>

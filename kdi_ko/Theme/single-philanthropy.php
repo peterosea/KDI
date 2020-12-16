@@ -56,7 +56,7 @@ the_post();
               $prev_link = '<a rel="prev" href="' . get_permalink($prev_post->ID) . '" title="' . $prev_title . '">' . $prev_title . '</a>';
               $prev_date = get_the_date('Y-m-d', $prev_post->ID);
             }
-            echo <<<div
+            echo <<<HTML
             <tr class="prev">
               <td>
                 <div>
@@ -71,7 +71,7 @@ the_post();
                 $prev_date
               </td>
             </tr>
-            div;
+HTML;
 
             $next_post = get_next_post();
             $next_title = '';
@@ -82,7 +82,7 @@ the_post();
               $next_link = '<a rel="prev" href="' . get_permalink($next_post->ID) . '" title="' . $next_title . '">' . $next_title . '</a>';
               $next_date = get_the_date('Y-m-d', $prev_post->ID);
             }
-            echo <<<div
+            echo <<<HTML
             <tr class="next">
               <td>
                 <div>
@@ -97,7 +97,7 @@ the_post();
                 $next_date
               </td>
             </tr>
-            div;
+HTML;
             ?>
           </tbody>
         </table>
