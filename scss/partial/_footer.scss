@@ -1,0 +1,139 @@
+body.home footer.default {
+  color: $white;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  .box {
+    background-color: $white;
+  }
+  .snsList {
+    svg {
+      fill: #04070c;
+    }
+    .insta {
+      fill: rgb(255, 255, 255);
+    }
+  }
+}
+footer.default {
+  border-top: 1px solid $very-light-pink-two;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include respond-to("sm") {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .container-fluid {
+    @include respond-to("sm") {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+  .justifyCenter {
+    display: flex;
+    align-items: center;
+  }
+  .alignRight {
+    display: flex;
+    flex-direction: column;
+  }
+  .listWrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include respond-to("sm") {
+      justify-content: flex-start;
+      flex-direction: row;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+  }
+  .pageList {
+    margin: 0;
+    margin-bottom: 30px;
+    @include respond-to("sm") {
+      margin-right: 50px;
+      margin-bottom: 0px;
+    }
+    li {
+      margin-right: 8px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      font-family: $NotoSansKR;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.86;
+      letter-spacing: normal;
+      text-align: right;
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  .snsList {
+    margin: 0;
+    li {
+      padding: 0 8px;
+      margin: 0;
+    }
+    .box {
+      width: 30px;
+      height: 30px;
+      background-color: $black-two;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include respond-to("md") {
+        opacity: 0.5;
+        transition: opacity 0.3s;
+        will-change: opacity;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    svg {
+      fill: $white;
+    }
+    .insta {
+      fill: $black-two;
+      @include respond-to("md") {
+        opacity: 0.5;
+        transition: opacity 0.3s;
+        will-change: opacity;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .cc {
+    opacity: 0.5;
+    font-family: $NotoSansKR;
+    font-size: 12px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black-three;
+    @include respond-to("sm") {
+      font-size: 14px;
+      line-height: 2.86;
+      color: inherit;
+      text-align: left;
+    }
+  }
+}

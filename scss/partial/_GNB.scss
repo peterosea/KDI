@@ -1,0 +1,294 @@
+header.entry-header {
+  position: relative;
+  z-index: 9999;
+}
+.header-default {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  opacity: 0.95;
+  background-color: $dark;
+  .logo {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  .menu-gnb-container > .menu > .menu-item {
+    padding: 30px 0;
+  }
+  .translate {
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 30px;
+    border-radius: 80px;
+    background-color: $charcoal-grey;
+
+    span {
+      font-family: $NotoSansKR;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: -0.8px;
+      text-align: left;
+      color: $white;
+    }
+  }
+  .menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      list-style: none;
+      margin-right: 50px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &.current-menu-ancestor {
+        .sub-menu {
+          z-index: 2;
+          top: 100%;
+        }
+      }
+      &:hover {
+        a {
+          opacity: 1;
+        }
+        .sub-menu {
+          z-index: 3;
+          top: 100%;
+        }
+      }
+      &.current-menu-parent {
+        a {
+          opacity: 1;
+        }
+        li.current-menu-item a {
+          color: $electric-blue;
+        }
+      }
+      a {
+        font-family: $NotoSansKR;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: -1px;
+        text-align: left;
+        opacity: 0.5;
+        color: $white;
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+      .sub-menu {
+        width: 100%;
+        position: absolute;
+        top: -200%;
+        padding: 23px 0;
+        left: 0;
+        display: flex;
+        z-index: -9999;
+        justify-content: center;
+        background-color: $white;
+        a {
+          font-family: $NotoSansKR;
+          font-size: 16px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: -0.8px;
+          text-align: left;
+          color: $black-three;
+          &:hover {
+            color: $electric-blue;
+          }
+        }
+      }
+    }
+  }
+}
+.header-default-mobile {
+  .headerOrigin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: $dark;
+
+    .logo {
+      position: relative;
+      margin-left: 10px;
+    }
+    .logo img {
+      width: 60px;
+    }
+
+    button {
+      border: 0;
+      background-color: transparent;
+      box-shadow: none;
+      outline: none !important;
+      padding: 0;
+    }
+    .dropdown-menu.show {
+      position: fixed !important;
+      transform: none !important;
+      top: 0 !important;
+      left: 0;
+    }
+    .dropdown-menu {
+      width: 100%;
+      height: 100%;
+      border: none;
+      margin: 0;
+      padding: 0;
+      background-color: $black-two;
+      border-radius: 0;
+      color: inherit;
+
+      .header {
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        background-color: $dark;
+        svg {
+          cursor: pointer;
+        }
+      }
+      .menuBox {
+        padding: 50px 30px;
+      }
+      hr {
+        opacity: 0.2;
+        background-color: $white;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul.menuList li {
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          font-family: $NotoSansKR;
+          font-size: 26px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 0.92;
+          letter-spacing: -1.3px;
+          text-align: left;
+          color: $white;
+          text-decoration: none;
+          opacity: 0.5;
+          transition: all 0.3s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        &.current a {
+          opacity: 1;
+        }
+      }
+      ul.translate li {
+        margin-bottom: 30px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          font-family: $NotoSansKR;
+          font-size: 20px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.2;
+          letter-spacing: -1px;
+          text-align: left;
+          color: $white;
+          text-decoration: none;
+          opacity: 0.5;
+          transition: all 0.3s;
+          &:hover {
+            opacity: 1;
+          }
+          &.en.en_US,
+          &.ko.ko_KR {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .fixedSubmenu {
+    border-bottom: 1px solid $very-light-pink-seven;
+    ul.menu {
+      margin: 0;
+      padding: 0;
+      > li {
+        display: none;
+      }
+      > li.current-menu-ancestor {
+        display: block;
+        > a {
+          display: none;
+        }
+      }
+    }
+    ul.sub-menu {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      li {
+        margin-right: 20px;
+        padding: 18px 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: -0.8px;
+          text-align: left;
+          color: $black-three;
+        }
+        &.current-menu-item a {
+          color: $electric-blue;
+        }
+      }
+    }
+  }
+}
+body.home {
+  .fixedSubmenu {
+    border-bottom: 0;
+  }
+}
+body.admin-bar {
+  header.entry-header {
+    z-index: 999999;
+  }
+}

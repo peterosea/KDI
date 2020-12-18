@@ -1,9 +1,18 @@
 {
+  "liveSassCompile.settings.generateMap": false,
   "liveSassCompile.settings.formats": [
     {
       "extensionName": ".css",
-      "savePath": "./src", // 원하는 경로 지정
+      "savePath": "./kdi_ko/Theme", // 원하는 경로 지정
+    },
+    {
+      "extensionName": ".css",
+      "savePath": "./kdi_en/Theme", // 원하는 경로 지정
     }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**"
   ],
   "liveSassCompile.settings.autoprefix": [
     "> 1%",
