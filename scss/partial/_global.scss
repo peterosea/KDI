@@ -1,0 +1,12 @@
+html body {
+  margin: 0;
+}
+
+.site-content {
+  position: relative;
+}
+.site-branding-container,
+.skip-link.screen-reader-text,
+.site-info {
+  display: none;
+}

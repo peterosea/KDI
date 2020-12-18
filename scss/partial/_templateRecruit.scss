@@ -1,0 +1,101 @@
+main.recruit {
+  @include respond-to("xsm") {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .row.class {
+    margin-bottom: 60px;
+  }
+  .borderBox {
+    border-radius: 10px;
+    border: solid 1px $very-light-pink-six;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    @include respond-to("sm") {
+      padding: 50px;
+      gap: 50px;
+    }
+  }
+  h2 {
+    font-size: 35px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: -1.75px;
+    text-align: left;
+    color: $black-three;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: -0.8px;
+    text-align: left;
+    color: $black-three;
+    .pointColor {
+      color: $electric-blue;
+    }
+  }
+
+  .row.process {
+    margin-bottom: 100px;
+  }
+  .processWrap {
+    position: relative;
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.08;
+      letter-spacing: -1.2px;
+      text-align: center;
+      color: $black-three;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.88;
+      letter-spacing: -0.8px;
+      text-align: center;
+      color: $black-three;
+    }
+    @include respond-to("xl") {
+      .round:after {
+        content: "";
+        display: block;
+        width: 28px;
+        height: 20px;
+        background-image: url(/wp-content/uploads/3-3@3x.png);
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        left: 100%;
+        transform: translateX(-50%);
+      }
+      &:last-child .round:after {
+        content: none;
+      }
+    }
+  }
+  .round {
+    border-radius: 999px;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background-color: $very-light-pink-four;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}

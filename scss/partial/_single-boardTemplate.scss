@@ -1,0 +1,207 @@
+main.boardTemplate {
+  padding-top: 0;
+  padding-bottom: 30px;
+  @include respond-to("sm") {
+    padding-top: 100px;
+    padding-bottom: 150px;
+  }
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+    @include respond-to("sm") {
+      padding-left: auto;
+      padding-right: auto;
+    }
+  }
+  .row.header {
+    .col > div {
+      padding: 20px;
+      background-color: $pale-grey;
+      @include respond-to("sm") {
+        padding: 20px 30px;
+      }
+    }
+    .col div.postTitle {
+      border-bottom: 0;
+      padding-bottom: 10px;
+      @include respond-to("sm") {
+        border-bottom: 1px solid $very-light-pink-three;
+        border-top: 2px solid $cloudy-blue-two;
+        padding-bottom: 20px;
+      }
+      span {
+        font-family: $NotoSansKR;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: -1.2px;
+        text-align: left;
+        color: $black-three;
+
+        @include respond-to("sm") {
+          font-size: 20px;
+          line-height: 1.2;
+          letter-spacing: -1px;
+        }
+      }
+    }
+    .col div.info {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $very-light-pink-three;
+      padding-top: 0;
+      @include respond-to("sm") {
+        padding-top: 20px;
+        justify-content: flex-end;
+      }
+
+      .author {
+        margin-right: 50px;
+      }
+      .label {
+        font-family: $NotoSansKR;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: -0.8px;
+        text-align: right;
+        color: $very-light-pink-five;
+        margin-right: 15px;
+        display: inline-block;
+      }
+      .name {
+        font-family: $NotoSansKR;
+        font-size: 16px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: -0.8px;
+        text-align: right;
+        color: $black-three;
+      }
+    }
+  }
+  .content {
+    padding: 30px 20px;
+    @include respond-to("sm") {
+      padding: 50px 30px;
+    }
+    p {
+      font-family: $NotoSansKR;
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.38;
+      letter-spacing: -0.8px;
+      color: $black-three;
+    }
+  }
+  table.navigation {
+    width: 100%;
+    border-top: 1px solid $cloudy-blue-two;
+    border-bottom: 1px solid $cloudy-blue-two;
+    td {
+      padding: 23px 20px;
+      border-bottom: 1px solid $very-light-pink-three;
+
+      &:first-child {
+        padding-right: 0;
+        @include respond-to("sm") {
+          width: 110px;
+          padding-right: 23px;
+        }
+      }
+      @include respond-to("sm") {
+        padding: 23px;
+      }
+    }
+    .prev img {
+      transform: rotate(180deg);
+    }
+    .next img,
+    .prev img {
+      display: none;
+      @include respond-to("sm") {
+        display: block;
+      }
+    }
+    tr td {
+      &:first-child > div {
+        display: flex;
+        align-items: center;
+        span {
+          font-size: 16px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: -0.8px;
+          color: $brown-grey-two;
+          @include respond-to("sm") {
+            color: $black-three;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    tr.next td {
+      border-bottom: 1px solid $cloudy-blue-two;
+    }
+    a {
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: -0.8px;
+      text-align: left;
+      color: $black-three;
+      text-decoration: none;
+    }
+    .date {
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: -0.8px;
+      text-align: right;
+      color: $black-three;
+      display: none;
+      @include respond-to("sm") {
+        display: table-cell;
+      }
+    }
+  }
+  .row.navigation {
+    @include respond-to("sm") {
+      margin-bottom: 50px;
+    }
+  }
+  .backList {
+    padding: 18px 50px;
+    background-color: $electric-blue;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -0.8px;
+    text-align: left;
+    color: $white;
+    text-decoration: none;
+
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    @include respond-to("sm") {
+      display: inline;
+      line-height: 4.38;
+    }
+  }
+}
