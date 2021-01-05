@@ -21,6 +21,8 @@ get_template_part('template-parts/header/page', 'header-history');
             ));
 
             foreach ($historyPosts as $hp) {
+              $post = $hp;
+              setup_postdata($post);
               $thumbnail = get_the_post_thumbnail($hp->post_id);
               $date = get_field('date');
               $timeline = <<<HTML
@@ -38,6 +40,7 @@ get_template_part('template-parts/header/page', 'header-history');
 HTML;
               echo $timeline;
             }
+            wp_reset_postdata();
             ?>
           </ul>
         </div>
