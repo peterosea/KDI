@@ -54,15 +54,14 @@ get_template_part('template-parts/header/page', 'header-news');
     );
 
     // If is_front_page "paged" parameters as $page number
-    if (is_front_page())
+    if (is_front_page() || $noticeArgs !== 'null')
       $args['paged'] = $page;
 
     // Instantiate custom query
     $custom_query = new WP_Query($args);
     $notice_query = new WP_Query($noticeArgs);
 
-    // Custom loop
-    if ($custom_query->have_posts()) {
+    if ($notice_query->have_posts()) {
       while ($notice_query->have_posts()) :
         $notice_query->the_post();
         $_title = get_the_title();
@@ -81,6 +80,9 @@ get_template_part('template-parts/header/page', 'header-news');
         </div>
 HTML;
       endwhile;
+    }
+    // Custom loop
+    if ($custom_query->have_posts()) {
       while ($custom_query->have_posts()) :
         $custom_query->the_post();
         /**
