@@ -1,19 +1,21 @@
+<?php
+$section2 = get_field('section2');
+?>
 <section class="section2">
   <div class="container">
     <div class="row mb-4 pb-1">
       <div class="col-12">
         <div class="box box-1">
-          <div class="imgBg" style="background-image:url(<?php echo $img_url ?>/1564.jpg)">
-            <img src="<?php echo $img_url ?>/1564.jpg" alt="">
+          <div class="imgBg" style="background-image:url(<?php echo $section2['grid1']['background'] ?>)">
+            <img src="<?php echo $section2['grid1']['background'] ?>" alt="">
           </div>
           <div class="content">
             <div>
-              <h1 class="title">차기다련장체계(천무)</h1>
-              <p>보병 전력증강을 위한<br />
-                장사거리/고정밀 유도로켓</p>
+              <h1 class="title"><?php echo $section2['grid1']['title'] ?></h1>
+              <p><?php echo $section2['grid1']['content'] ?></p>
             </div>
             <div class="moreBtnWrap">
-              <a href="/mrl/" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="<?php echo $section2['grid1']['button']['url'] ?>" class="moreBtn"><span><?php echo $section2['grid1']['button']['title'] ?></span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -74,17 +76,16 @@ HTML;
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="box box-3 imgBg" style="background-image: url(<?php echo $img_url ?>/pc-004021816-1.jpg)">
+        <div class="box box-3 imgBg" style="background-image: url(<?php echo $section2['grid2']['background'] ?>">
           <div class="imgBg">
           </div>
           <div class="content">
             <div>
-              <h1 class="title">230mm급무유도탄</h1>
-              <p>천무 발사대에서 운용가능한 <br />
-                지역제압용 무유도로켓</p>
+              <h1 class="title"><?php echo $section2['grid2']['title'] ?></h1>
+              <p><?php echo $section2['grid2']['content'] ?></p>
             </div>
             <div class="moreBtnWrap">
-              <a href="/mrl" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="<?php echo $section2['grid2']['button']['url'] ?>" class="moreBtn"><span><?php echo $section2['grid2']['button']['title'] ?></span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -92,28 +93,16 @@ HTML;
     </div>
     <div class="row mb-4 pb-1">
       <div class="col-12 col-lg-8 mb-4 mb-lg-0">
-        <style>
-          .sds81678273 {
-            background-image: url(<?php echo $img_url ?>/2827.jpg);
-          }
-
-          @media screen and (min-width: 992px) {
-            .sds81678273 {
-              background-image: url(<?php echo $img_url ?>/2820.jpg);
-            }
-          }
-        </style>
-        <div class="box box-3 imgBg sds81678273">
+        <div class="box box-3 imgBg" style="background-image: url(<?php echo $section2['grid3']['background'] ?>">
           <div class="imgBg">
           </div>
           <div class="content">
             <div>
-              <h1 class="title">전자식시한신관 등 신관류</h1>
-              <p>탄약이 요구하는 시간과 <br />
-                장소에서 작약을 폭발시키는 점화장치</p>
+              <h1 class="title"><?php echo $section2['grid3']['title'] ?></h1>
+              <p><?php echo $section2['grid3']['content'] ?></p>
             </div>
             <div class="moreBtnWrap">
-              <a href="/fuze" class="moreBtn"><span>자세히보기</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="<?php echo $section2['grid3']['button']['url'] ?>" class="moreBtn"><span><?php echo $section2['grid3']['button']['title'] ?></span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>
