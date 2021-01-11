@@ -119,6 +119,10 @@ header.entry-header {
 .header-default .menu li.current-menu-ancestor .sub-menu {
   z-index: 2;
   top: 100%;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header-default .menu li:hover a {
