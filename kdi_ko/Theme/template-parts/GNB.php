@@ -8,22 +8,18 @@ if (!empty($discussion) && absint($discussion->responses) > 0) {
 <header class="<?php echo $classes; ?>">
   <nav class="header-default d-none d-md-block">
     <div class="container-fluid">
-      <div class="row">
-        <a href="/" class="logo">
-          <img src="<?php echo $img_url ?>/1573.png" srcset="<?php echo $img_url ?>/1573@2x.png 2x, <?php echo $img_url ?>/1573@3x.png 3x">
-        </a>
-        <div class="col">
-          <?php wp_nav_menu() ?>
-        </div>
-        <?php
-        $lo_link = '/en';
-        if (get_locale() == 'en_US')
-          $lo_link = '/';
-        ?>
-        <a href="<?php echo $lo_link ?>" class="translate">
-          <span>한글/Eng</span>
-        </a>
-      </div>
+      <a href="/" class="logo">
+        <img src="<?php echo $img_url ?>/1573.png" srcset="<?php echo $img_url ?>/1573@2x.png 2x, <?php echo $img_url ?>/1573@3x.png 3x">
+      </a>
+      <?php wp_nav_menu() ?>
+      <?php
+      $lo_link = '/en';
+      if (get_locale() == 'en_US')
+        $lo_link = '/';
+      ?>
+      <a href="<?php echo $lo_link ?>" class="translate">
+        <span>한글/Eng</span>
+      </a>
     </div>
   </nav>
   <nav class="header-default-mobile d-md-none">
