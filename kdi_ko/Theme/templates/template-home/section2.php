@@ -48,7 +48,24 @@ $section2 = get_field('section2');
               )
             ));
 
-            foreach ($newsPosts as $np) {
+            $newsNoticePosts = get_posts(array(
+              'post_type'      => 'news',
+              'meta_query'     => array(
+                array(
+                  'key'        => 'notice',
+                  'value'      => '1',
+                  'compare'    => '=',
+                )
+              )
+            ));
+
+            if (count($newsPosts) !== 0) {
+              $slidePost = $newsPosts;
+            } else {
+              $slidePost = $newsNoticePosts;
+            }
+
+            foreach ($slidePost as $np) {
               $text = get_the_excerpt($np);
               $link = get_the_permalink($np);
               $slide = <<<HTML
@@ -115,7 +132,7 @@ HTML;
           </div>
           <div class="noticeSlider">
             <?php
-            $noticePosts = get_posts(array(
+            $crsPosts = get_posts(array(
               'numberposts' => 3,
               'post_type' => 'csr-activities',
               'post_status' => 'publish',
@@ -133,7 +150,24 @@ HTML;
               )
             ));
 
-            foreach ($noticePosts as $np) {
+            $crsNoticePosts = get_posts(array(
+              'post_type'      => 'csr-activities',
+              'meta_query'     => array(
+                array(
+                  'key'        => 'notice',
+                  'value'      => '1',
+                  'compare'    => '=',
+                )
+              )
+            ));
+
+            if (count($newsPosts) !== 0) {
+              $slidePost = $crsPosts;
+            } else {
+              $slidePost = $crsNoticePosts;
+            }
+
+            foreach ($slidePost as $np) {
               $text = get_the_excerpt($np);
               $link = get_the_permalink($np);
               $slide = <<<HTML
