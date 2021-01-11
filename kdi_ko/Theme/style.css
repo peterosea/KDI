@@ -37,6 +37,10 @@ header.entry-header {
   background-color: #1b1d21;
 }
 
+.header-default .container-fluid {
+  padding: 0;
+}
+
 .header-default .logo {
   position: absolute;
   left: 40px;
@@ -86,11 +90,26 @@ header.entry-header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  will-change: transform;
+}
+
+.header-default .menu > li::before {
+  content: "";
+  height: 71px;
+  top: -200%;
+  left: 0;
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .header-default .menu li {
   list-style: none;
   margin-right: 50px;
+  position: relative;
 }
 
 .header-default .menu li:last-child {
@@ -100,9 +119,19 @@ header.entry-header {
 .header-default .menu li.current-menu-ancestor .sub-menu {
   z-index: 2;
   top: 100%;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header-default .menu li:hover a {
+  opacity: 1;
+}
+
+.header-default .menu li:hover::before {
+  z-index: 3;
+  top: 100%;
   opacity: 1;
 }
 
@@ -133,10 +162,10 @@ header.entry-header {
   text-decoration: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  white-space: nowrap;
 }
 
 .header-default .menu li .sub-menu {
-  width: 100%;
   position: absolute;
   top: -200%;
   padding: 23px 0;
@@ -148,7 +177,6 @@ header.entry-header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ffffff;
 }
 
 .header-default .menu li .sub-menu a {
