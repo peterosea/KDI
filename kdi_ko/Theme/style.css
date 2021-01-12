@@ -14,6 +14,10 @@ html body {
   margin: 0;
 }
 
+img {
+  height: auto;
+}
+
 .site-content {
   position: relative;
 }
@@ -2168,6 +2172,54 @@ main.recruit .processWrap p {
   letter-spacing: -0.8px;
   text-align: center;
   color: #222222;
+}
+
+main.recruit .processWrap ul {
+  list-style: none;
+  margin: 0;
+}
+
+main.recruit .processWrap ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4px;
+}
+
+main.recruit .processWrap ul li:last-child {
+  margin-bottom: 0;
+}
+
+main.recruit .processWrap ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+main.recruit .processWrap ul li a:visited {
+  color: #6f42c1;
+}
+
+main.recruit .processWrap ul li a:visited svg path {
+  fill: #6f42c1;
+}
+
+main.recruit .processWrap ul li a:hover svg path {
+  fill: #0056b3;
+}
+
+main.recruit .processWrap ul li a svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+main.recruit .processWrap ul li a svg path {
+  fill: #0056b3;
 }
 
 @media (min-width: 1200px) {
