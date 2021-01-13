@@ -22,7 +22,8 @@ function ea_disable_editor($id = false)
   );
 
   $excluded_ids = array(
-    // get_option( 'page_on_front' )
+    211,
+    93
   );
 
   if (empty($id))
