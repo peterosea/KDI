@@ -6,7 +6,8 @@ main.templatePage {
     max-width: 1440px;
   }
 
-  h2 {
+  h2,
+  h2 > p {
     font-family: $NotoSansKR;
     font-size: 20px;
     line-height: 1.9;

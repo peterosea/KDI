@@ -1172,7 +1172,8 @@ main.templatePage.history .container {
   max-width: 1440px;
 }
 
-main.templatePage h2 {
+main.templatePage h2,
+main.templatePage h2 > p {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 20px;
   line-height: 1.9;
@@ -1183,7 +1184,8 @@ main.templatePage h2 {
 }
 
 @media (min-width: 768px) {
-  main.templatePage h2 {
+  main.templatePage h2,
+  main.templatePage h2 > p {
     font-size: 35px;
     line-height: 1.43;
     letter-spacing: -1.75px;

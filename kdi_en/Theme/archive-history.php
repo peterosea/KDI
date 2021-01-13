@@ -3,12 +3,12 @@ $theme_url = get_stylesheet_directory();
 $functions_url = get_stylesheet_directory() . '/functions';
 $img_url = get_home_url() . '/wp-content/uploads';
 get_header();
-get_template_part('template-parts/header/page', 'header-history');
+get_template_part('template-parts/header/page', 'header-archive');
 ?>
 <main class="templatePage history">
   <div class="container">
     <h2 style="text-align:center">
-      <b>Korea Defense Industries Co., Ltd.</b> Will grow into<br /> a leading defense company in Korea through generous investment<br /> and research and development efforts.
+      <?php echo get_field('slogan', 'option') ?>
     </h2>
     <div class="row">
       <div class="col">

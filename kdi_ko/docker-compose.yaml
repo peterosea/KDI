@@ -3,6 +3,7 @@ version: "3.7"
 services:
   wordpress:
     image: wordpress:php7.4
+    container_name: WP__ko-kdi
     restart: always
     ports:
       - 40001:80
@@ -22,6 +23,7 @@ services:
 
   db:
     image: mariadb
+    container_name: DB__ko-kdi
     restart: always
     ports:
       - 3306
