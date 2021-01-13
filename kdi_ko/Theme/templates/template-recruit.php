@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Template Name: recruit
- * Template Post Type: post, page
+ * Template Name: 채용 페이지 템플릿
+ * Template Post Type: page
  */
 
 // variables
