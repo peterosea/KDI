@@ -14,7 +14,16 @@ get_template_part('template-parts/header/page', 'header');
 ?>
 <main class="templatePage">
   <div class="container">
-    <?php the_content(); ?>
+    <?php
+    if (!empty(get_field('image'))) { ?>
+      <div style="text-align:center">
+        <?php echo wp_get_attachment_image(get_field('image'), 'full', '', 'style=margin: 0 auto;'); ?>
+      </div>
+    <?php
+    } else {
+      the_content();
+    }
+    ?>
   </div>
 </main>
 <?php
