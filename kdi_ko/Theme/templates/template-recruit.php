@@ -88,7 +88,7 @@ HTML;
             <ul>
             $list
             </ul>
-  HTML;
+HTML;
           echo $processHtml;
           ?>
         </div>
@@ -166,7 +166,7 @@ HTML;
             <ul>
               $list
             </ul>
-  HTML;
+HTML;
           echo $processHtml;
           ?>
         </div>
