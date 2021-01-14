@@ -71,7 +71,7 @@ get_template_part('template-parts/header/page', 'header-archive');
         echo <<<HTML
         <div class="row notice list">
           <div class="col">
-            <span class="noticeBadge">공지</span>
+            <span class="noticeBadge">notice</span>
             <a href="$_permalink">$_title</a>
           </div>
           <div class="col-12 col-sm-4 col-md-2 text-sm-center">

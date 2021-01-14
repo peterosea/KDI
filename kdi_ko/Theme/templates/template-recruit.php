@@ -56,7 +56,7 @@ $new_recruitment = get_field('new_recruitment');
           $list = '';
           if (!empty($nr['more'])) {
             foreach ($nr['more'] as $nr_more) :
-              $title = $nr_more['title'];
+              $more_title = $nr_more['title'];
               $url = $nr_more['url'];
               $listItem = <<<HTML
               <li>
@@ -71,7 +71,7 @@ $new_recruitment = get_field('new_recruitment');
                         L316.845,283.638c-24.992,24.992-65.5,24.992-90.491,0c-8.331-8.331-21.839-8.331-30.17,0s-8.331,21.839,0,30.17
                         c41.654,41.654,109.177,41.654,150.831,0l132.736-132.736C521.405,139.418,521.405,71.894,479.751,30.24z"/>
                     </svg>
-                    <span>$title</span>
+                    <span>$more_title</span>
                 </a>
               </li>
 HTML;

@@ -2179,6 +2179,7 @@ main.recruit .processWrap p {
 main.recruit .processWrap ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 main.recruit .processWrap ul li {
@@ -2186,6 +2187,9 @@ main.recruit .processWrap ul li {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main.recruit .processWrap ul li:last-child {

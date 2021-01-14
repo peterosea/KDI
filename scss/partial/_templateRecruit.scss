@@ -72,9 +72,11 @@ main.recruit {
     ul {
       list-style: none;
       margin: 0;
+      padding: 0;
       li {
         display: flex;
         margin-bottom: 4px;
+        justify-content: center;
         &:last-child {
           margin-bottom: 0;
         }
