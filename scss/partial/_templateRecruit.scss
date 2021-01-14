@@ -69,6 +69,41 @@ main.recruit {
       text-align: center;
       color: $black-three;
     }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: flex;
+        margin-bottom: 4px;
+        justify-content: center;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          &:visited {
+            color: #6f42c1;
+            svg path {
+              fill: #6f42c1;
+            }
+          }
+          &:hover svg path {
+            fill: #0056b3;
+          }
+          svg {
+            width: 14px;
+            height: 14px;
+            margin-right: 4px;
+            path {
+              fill: #0056b3;
+            }
+          }
+        }
+      }
+    }
     @include respond-to("xl") {
       .round:after {
         content: "";

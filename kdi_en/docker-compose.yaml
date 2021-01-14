@@ -3,9 +3,10 @@ version: "3.7"
 services:
   wordpress:
     image: wordpress:php7.4
+    container_name: WP__en-kdi
     restart: always
     ports:
-      - 40002:80
+      - 40004:80
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wp
@@ -20,6 +21,7 @@ services:
 
   db:
     image: mariadb
+    container_name: DB__en-kdi
     restart: always
     ports:
       - 3306

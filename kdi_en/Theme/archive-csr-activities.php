@@ -4,7 +4,7 @@ $theme_url = get_stylesheet_directory();
 $functions_url = get_stylesheet_directory() . '/functions';
 $img_url = get_home_url() . '/wp-content/uploads';
 get_header();
-get_template_part('template-parts/header/page', 'header-csr-activities');
+get_template_part('template-parts/header/page', 'header-archive');
 ?>
 <main class="templatePage newsArchive">
   <div class="container boardTable">
@@ -54,15 +54,14 @@ get_template_part('template-parts/header/page', 'header-csr-activities');
     );
 
     // If is_front_page "paged" parameters as $page number
-    if (is_front_page())
+    if (is_front_page() || $noticeArgs !== 'null')
       $args['paged'] = $page;
 
     // Instantiate custom query
     $custom_query = new WP_Query($args);
     $notice_query = new WP_Query($noticeArgs);
 
-    // Custom loop
-    if ($custom_query->have_posts()) {
+    if ($notice_query->have_posts()) {
       while ($notice_query->have_posts()) :
         $notice_query->the_post();
         $_title = get_the_title();
@@ -72,7 +71,7 @@ get_template_part('template-parts/header/page', 'header-csr-activities');
         echo <<<HTML
         <div class="row notice list">
           <div class="col">
-            <span class="noticeBadge">공지</span>
+            <span class="noticeBadge">notice</span>
             <a href="$_permalink">$_title</a>
           </div>
           <div class="col-12 col-sm-4 col-md-2 text-sm-center">
@@ -81,6 +80,9 @@ get_template_part('template-parts/header/page', 'header-csr-activities');
         </div>
 HTML;
       endwhile;
+    }
+    // Custom loop
+    if ($custom_query->have_posts()) {
       while ($custom_query->have_posts()) :
         $custom_query->the_post();
         /**

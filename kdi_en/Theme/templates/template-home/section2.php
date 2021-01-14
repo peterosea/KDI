@@ -1,18 +1,21 @@
+<?php
+$section2 = get_field('section2');
+?>
 <section class="section2">
   <div class="container">
     <div class="row mb-4 pb-1">
       <div class="col-12">
         <div class="box box-1">
-          <div class="imgBg" style="background-image:url(<?php echo $img_url ?>/1564.jpg)">
-            <img src="<?php echo $img_url ?>/1564.jpg" alt="">
+          <div class="imgBg" style="background-image:url(<?php echo $section2['grid1']['background'] ?>)">
+            <img src="<?php echo $section2['grid1']['background'] ?>" alt="">
           </div>
           <div class="content">
             <div>
-              <h1 class="title">Multi launch rocket system Chunmoo</h1>
-              <p>Long range/high-precision guided rocket<br /> for enhancing infantry.</p>
+              <h1 class="title"><?php echo $section2['grid1']['title'] ?></h1>
+              <p><?php echo $section2['grid1']['content'] ?></p>
             </div>
             <div class="moreBtnWrap">
-              <a href="/mrl/" class="moreBtn"><span>Read more</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="<?php echo $section2['grid1']['button']['url'] ?>" class="moreBtn"><span><?php echo $section2['grid1']['button']['title'] ?></span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -45,7 +48,24 @@
               )
             ));
 
-            foreach ($newsPosts as $np) {
+            $newsNoticePosts = get_posts(array(
+              'post_type'      => 'news',
+              'meta_query'     => array(
+                array(
+                  'key'        => 'notice',
+                  'value'      => '1',
+                  'compare'    => '=',
+                )
+              )
+            ));
+
+            if (count($newsPosts) !== 0) {
+              $slidePost = $newsPosts;
+            } else {
+              $slidePost = $newsNoticePosts;
+            }
+
+            foreach ($slidePost as $np) {
               $text = get_the_excerpt($np);
               $link = get_the_permalink($np);
               $slide = <<<HTML
@@ -73,18 +93,16 @@ HTML;
         </div>
       </div>
       <div class="col-12 col-lg-8">
-        <div class="box box-3 imgBg" style="background-image: url(<?php echo $img_url ?>/image3-min.png)">
+        <div class="box box-3 imgBg" style="background-image: url(<?php echo $section2['grid2']['background'] ?>">
           <div class="imgBg">
           </div>
           <div class="content">
             <div>
-              <h1 class="title">230mm class unguided rocket</h1>
-              <p>
-                Unguided rocket for regional suppression<br /> that can be operated at the Cheonmu launcher
-              </p>
+              <h1 class="title"><?php echo $section2['grid2']['title'] ?></h1>
+              <p><?php echo $section2['grid2']['content'] ?></p>
             </div>
             <div class="moreBtnWrap">
-              <a href="/mrl" class="moreBtn"><span>Read more</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="<?php echo $section2['grid2']['button']['url'] ?>" class="moreBtn"><span><?php echo $section2['grid2']['button']['title'] ?></span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -92,16 +110,16 @@ HTML;
     </div>
     <div class="row mb-4 pb-1">
       <div class="col-12 col-lg-8 mb-4 mb-lg-0">
-        <div class="box box-3 imgBg" style="background-image: url(<?php echo $img_url ?>/2820.jpg)">
+        <div class="box box-3 imgBg" style="background-image: url(<?php echo $section2['grid3']['background'] ?>">
           <div class="imgBg">
           </div>
           <div class="content">
             <div>
-              <h1 class="title">Fuze</h1>
-              <p>Ignition device to explode at the time and<br /> place the ammunition requires</p>
+              <h1 class="title"><?php echo $section2['grid3']['title'] ?></h1>
+              <p><?php echo $section2['grid3']['content'] ?></p>
             </div>
             <div class="moreBtnWrap">
-              <a href="/fuze" class="moreBtn"><span>Read more</span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
+              <a href="<?php echo $section2['grid3']['button']['url'] ?>" class="moreBtn"><span><?php echo $section2['grid3']['button']['title'] ?></span> <img src="<?php echo $img_url ?>/10.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -114,7 +132,7 @@ HTML;
           </div>
           <div class="noticeSlider">
             <?php
-            $noticePosts = get_posts(array(
+            $crsPosts = get_posts(array(
               'numberposts' => 3,
               'post_type' => 'csr-activities',
               'post_status' => 'publish',
@@ -132,7 +150,24 @@ HTML;
               )
             ));
 
-            foreach ($noticePosts as $np) {
+            $crsNoticePosts = get_posts(array(
+              'post_type'      => 'csr-activities',
+              'meta_query'     => array(
+                array(
+                  'key'        => 'notice',
+                  'value'      => '1',
+                  'compare'    => '=',
+                )
+              )
+            ));
+
+            if (count($newsPosts) !== 0) {
+              $slidePost = $crsPosts;
+            } else {
+              $slidePost = $crsNoticePosts;
+            }
+
+            foreach ($slidePost as $np) {
               $text = get_the_excerpt($np);
               $link = get_the_permalink($np);
               $slide = <<<HTML

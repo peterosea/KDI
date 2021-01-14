@@ -14,6 +14,10 @@ html body {
   margin: 0;
 }
 
+img {
+  height: auto;
+}
+
 .site-content {
   position: relative;
 }
@@ -35,6 +39,10 @@ header.entry-header {
   width: 100%;
   opacity: 0.95;
   background-color: #1b1d21;
+}
+
+.header-default .container-fluid {
+  padding: 0;
 }
 
 .header-default .logo {
@@ -86,11 +94,26 @@ header.entry-header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  will-change: transform;
+}
+
+.header-default .menu > li::before {
+  content: "";
+  height: 71px;
+  top: -200%;
+  left: 0;
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .header-default .menu li {
   list-style: none;
   margin-right: 50px;
+  position: relative;
 }
 
 .header-default .menu li:last-child {
@@ -100,9 +123,19 @@ header.entry-header {
 .header-default .menu li.current-menu-ancestor .sub-menu {
   z-index: 2;
   top: 100%;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header-default .menu li:hover a {
+  opacity: 1;
+}
+
+.header-default .menu li:hover::before {
+  z-index: 3;
+  top: 100%;
   opacity: 1;
 }
 
@@ -133,10 +166,10 @@ header.entry-header {
   text-decoration: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  white-space: nowrap;
 }
 
 .header-default .menu li .sub-menu {
-  width: 100%;
   position: absolute;
   top: -200%;
   padding: 23px 0;
@@ -148,7 +181,6 @@ header.entry-header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #ffffff;
 }
 
 .header-default .menu li .sub-menu a {
@@ -1140,7 +1172,8 @@ main.templatePage.history .container {
   max-width: 1440px;
 }
 
-main.templatePage h2 {
+main.templatePage h2,
+main.templatePage h2 > p {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 20px;
   line-height: 1.9;
@@ -1151,7 +1184,8 @@ main.templatePage h2 {
 }
 
 @media (min-width: 768px) {
-  main.templatePage h2 {
+  main.templatePage h2,
+  main.templatePage h2 > p {
     font-size: 35px;
     line-height: 1.43;
     letter-spacing: -1.75px;
@@ -2140,6 +2174,58 @@ main.recruit .processWrap p {
   letter-spacing: -0.8px;
   text-align: center;
   color: #222222;
+}
+
+main.recruit .processWrap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main.recruit .processWrap ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main.recruit .processWrap ul li:last-child {
+  margin-bottom: 0;
+}
+
+main.recruit .processWrap ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+main.recruit .processWrap ul li a:visited {
+  color: #6f42c1;
+}
+
+main.recruit .processWrap ul li a:visited svg path {
+  fill: #6f42c1;
+}
+
+main.recruit .processWrap ul li a:hover svg path {
+  fill: #0056b3;
+}
+
+main.recruit .processWrap ul li a svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+main.recruit .processWrap ul li a svg path {
+  fill: #0056b3;
 }
 
 @media (min-width: 1200px) {

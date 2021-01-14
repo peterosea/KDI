@@ -1,8 +1,8 @@
 <?php
 
 /**
- * Template Name: Home
- * Template Post Type: post, page
+ * Template Name: 홈 페이지 템플릿
+ * Template Post Type: page
  */
 
 // variables

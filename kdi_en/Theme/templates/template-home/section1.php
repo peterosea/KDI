@@ -1,3 +1,6 @@
+<?php
+$section1 = get_field('section1');
+?>
 <section class="section1">
   <div class="slider">
     <div class="slickSlideBg">
@@ -13,21 +16,18 @@
           <div class="row">
             <div class="col">
               <h1 class="title">
-                Defense company trusted by realizing<br />
-                customer satisfaction
+                <?php echo $section1['title'] ?>
               </h1>
             </div>
           </div>
           <div class="row content">
-            <div class="col">
-              <span>
-                We will become the defense company trusted by customers for independent defense and world peace.
-              </span>
+            <div class="col dimText">
+              <?php echo $section1['content'] ?>
             </div>
           </div>
           <div class="row">
             <div class="col">
-              <a href="/ceo-greetings/" class="btn"><span>About KDI</span></a>
+              <a href="<?php echo $section1['button']['url'] ?>" class="btn"><span><?php echo $section1['button']['title'] ?></span></a>
             </div>
           </div>
         </div>
